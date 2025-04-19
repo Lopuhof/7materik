@@ -4,7 +4,86 @@
   box-sizing: border-box;
 }
 
-body .background__fone {
+@font-face {
+  font-family: "Goznak Semi Bold";
+  src: url("../../../../fonts/ofont.ru_Goznak.ttf");
+}
+@font-face {
+  font-family: "Hero Light";
+  src: url("../../../../fonts/ofont.ru_Hero.ttf");
+}
+body {
+  background-color: #B7D1E0;
+  padding-top: 1.5%;
+}
+body .App {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+}
+body .App .background-fone {
   width: 100%;
-  height: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .App .background-fone .logo {
+  display: block;
+}
+body .App .background-fone .logo-main {
+  display: flex;
+  justify-content: center;
+}
+body .App .background-fone .logo-main-img {
+  display: block;
+  width: 13vw;
+  height: 14vw;
+}
+body .App .background-fone .logo-main-img-png {
+  display: block;
+  width: 13vw;
+  height: 14vw;
+}
+body .App .background-fone .logo-main-text {
+  text-align: center;
+  font-family: "Goznak Semi Bold";
+  font-size: 7vw;
+  line-height: 1;
+}
+body .App .background-fone .logo-lines {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5vw;
+}
+body .App .background-fone .logo-lines-left {
+  height: 0.5px;
+  background-color: #1C4E55;
+  width: 20%;
+  margin-top: 1vw;
+  border: none;
+}
+body .App .background-fone .logo-lines-magazine {
+  width: 2vw;
+  height: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+body .App .background-fone .logo-lines-right {
+  height: 0.5px;
+  background-color: #1C4E55;
+  width: 20%;
+  margin-top: 1vw;
+  border: none;
+}
+body .App .background-fone .logo-slogan {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .App .background-fone .logo-slogan-text {
+  display: block;
+  text-align: center;
+  margin-top: 1vw;
+  font-family: "Hero Light";
+  font-size: 2vw;
 }

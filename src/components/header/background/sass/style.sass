@@ -3,8 +3,73 @@
     padding: 0
     box-sizing: border-box
 
+@font-face 
+    font-family: "Goznak Semi Bold"
+    src: url("../../../../fonts/ofont.ru_Goznak.ttf")
+
+@font-face 
+    font-family: "Hero Light"
+    src: url("../../../../fonts/ofont.ru_Hero.ttf")
+
+
 body
     background-color: #B7D1E0
-    .background__fone
-        width: 100%
-        height: 40vw
+    padding-top: 1.5%
+    .App
+        display: block
+        margin-left: auto
+        margin-right: auto
+        width: 1440px
+        .background-fone
+            width: 100%
+            margin-left: auto
+            margin-right: auto
+            .logo 
+                display: block
+                &-main
+                    display: flex
+                    justify-content: center
+                    &-img
+                        display: block
+                        width: 13vw
+                        height: 14vw
+                        &-png 
+                            display: block
+                            width: 13vw
+                            height: 14vw 
+                    &-text 
+                        text-align: center
+                        font-family: 'Goznak Semi Bold'
+                        font-size: 7vw
+                        line-height: 1
+                &-lines
+                    display: flex
+                    justify-content: center
+                    margin-top: 0.5vw
+                    &-left
+                        height: 0.5px
+                        background-color: #1C4E55
+                        width: 20%
+                        margin-top: 1vw
+                        border: none
+                    &-magazine
+                        width: 2vw
+                        height: 2vw
+                        margin-left: 1vw
+                        margin-right: 1vw
+                    &-right
+                        height: 0.5px
+                        background-color: #1C4E55
+                        width: 20%
+                        margin-top: 1vw
+                        border: none
+                &-slogan
+                    display: block
+                    margin-left: auto
+                    margin-right: auto
+                    &-text
+                        display: block
+                        text-align: center
+                        margin-top: 1vw
+                        font-family: "Hero Light"
+                        font-size: 2vw

@@ -1,11 +1,13 @@
-import React from 'react';
-import Background from './components/header/background/Background';
-import Search from './components/header/Search';
+import React from "react";
+import Header from "./components/header/background/Header";
+import Search from "./components/header/Search";
+import Main from "./components/main/Main";
 
 function App() {
   return (
     <div className="App">
-      <Background/>
+      <Header/>
+      <Main/>
     </div>
   );
 }

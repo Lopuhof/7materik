@@ -24,6 +24,9 @@ const Logo = () => {
             <div className="logo-slogan">
                 <span className="logo-slogan-text">Иногда лучше читать, чем говорить...</span>
             </div>
+            <div className="solid-line">
+                <hr className="solid-line-hr"/>
+            </div>
         </div>
     );
 };

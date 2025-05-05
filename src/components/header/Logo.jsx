@@ -4,7 +4,11 @@ import './background/css/style.css';
 //Добавляем изображения
 
 import logo_img from './img/logo.png';
-import logo_img_magazine from './img/logo_magazine.png';
+
+//Добавляем шрифты из FontAwesome
+
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBookOpen} from "@fortawesome/free-solid-svg-icons";
 
 const Logo = () => {
     return (
@@ -18,7 +22,8 @@ const Logo = () => {
             <div className="logo-lines">
                 <hr className="logo-lines-left"/>
                 <div className="logo-lines-img">
-                    <img src={logo_img_magazine} alt="Тут силуэт журнала" className="logo-lines-magazine"/></div>
+                    <FontAwesomeIcon icon={faBookOpen} className="logo-lines-img-icon"/>
+                </div>
                 <hr className="logo-lines-right"/>
             </div>
             <div className="logo-slogan">

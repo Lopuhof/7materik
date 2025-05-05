@@ -62,11 +62,13 @@ body .App .background-fone .logo-lines-left {
   margin-top: 1vw;
   border: none;
 }
-body .App .background-fone .logo-lines-magazine {
-  width: 2vw;
-  height: 2vw;
+body .App .background-fone .logo-lines-img {
   margin-left: 1vw;
   margin-right: 1vw;
+}
+body .App .background-fone .logo-lines-img-icon {
+  font-size: 2vw;
+  color: #1C4E55;
 }
 body .App .background-fone .logo-lines-right {
   height: 0.5px;
@@ -104,30 +106,42 @@ body .App .background-fone .form-container {
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 body .App .background-fone .form-container-search {
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 45%;
   height: 40px;
 }
 body .App .background-fone .form-container-search-input {
   width: 85%;
   margin-right: 2%;
+  padding-left: 3%;
+  border: none;
+  border-radius: 1vw;
 }
 body .App .background-fone .form-container-search-input::placeholder {
-  padding-left: 3%;
+  font-family: "Hero Light";
+  font-style: bold;
+  font-size: 1vw;
+  color: #1C4E55;
+}
+body .App .background-fone .form-container-search-input:focus {
+  outline: solid 1px #1C4E55;
 }
 body .App .background-fone .form-container-search-btn {
   width: 10%;
   background-image: url("../../img/search_img.png");
   background-size: none;
   background-repeat: no-repeat;
-  border: none;
+  border-width: 0.5px;
+  border-color: #1C4E55;
+  border-radius: 1vw;
+  background-color: #DBD962;
 }
-body .App .background-fone .form-container-search-btn .fa-book {
+body .App .background-fone .form-container-search-btn .fa-magnifying-glass {
   font-family: font-awesome;
-  font-size: 4px;
-  color: red;
+  font-size: 2vw;
+  color: #1C4E55;
 }

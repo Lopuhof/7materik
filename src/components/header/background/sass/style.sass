@@ -52,11 +52,12 @@ body
                         width: 20%
                         margin-top: 1vw
                         border: none
-                    &-magazine
-                        width: 2vw
-                        height: 2vw
+                    &-img
                         margin-left: 1vw
                         margin-right: 1vw
+                        &-icon
+                            font-size: 2vw
+                            color: #1C4E55
                     &-right
                         height: 0.5px
                         background-color: #1C4E55
@@ -88,25 +89,36 @@ body
                 width: 1440px
                 margin-left: auto
                 margin-right: auto
-                margin-top: 10px
+                margin-top: 25px
                 &-search    
                     display: flex
                     justify-content: center
-                    width: 25%
+                    width: 45%
                     height: 40px
                     &-input 
                         width: 85%
                         margin-right: 2%
+                        padding-left: 3%
+                        border: none
+                        border-radius: 1vw
                         &::placeholder
-                            padding-left: 3%
+                            font-family: "Hero Light"
+                            font-style: bold
+                            font-size: 1vw
+                            color: #1C4E55
+                        &:focus
+                            outline: solid 1px #1C4E55
                     &-btn 
                         width: 10%
                         background-image: url("../../img/search_img.png")
                         background-size: none
                         background-repeat: no-repeat
-                        border: none
-                        .fa-book 
+                        border-width: 0.5px
+                        border-color: #1C4E55
+                        border-radius: 1vw
+                        background-color: #DBD962
+                        .fa-magnifying-glass
                             font-family: font-awesome
-                            font-size: 4px
-                            color: red
+                            font-size: 2vw
+                            color: #1C4E55
                             

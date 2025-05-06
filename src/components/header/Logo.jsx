@@ -1,9 +1,9 @@
-import React from 'react';
-import './background/css/style.css';
+import React from "react";
+import "./background/css/style.css";
 
 //Добавляем изображения
 
-import logo_img from './img/logo.png';
+import logo_img from "./img/logo.png";
 
 //Добавляем шрифты из FontAwesome
 

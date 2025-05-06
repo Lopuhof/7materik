@@ -118,6 +118,7 @@ body .App .background-fone .form-container-search-input {
   width: 85%;
   margin-right: 2%;
   padding-left: 3%;
+  padding-right: 3%;
   border: none;
   border-radius: 1vw;
 }
@@ -144,4 +145,55 @@ body .App .background-fone .form-container-search-btn .fa-magnifying-glass {
   font-family: font-awesome;
   font-size: 2vw;
   color: #1C4E55;
+}
+body .App .main {
+  display: block;
+  margin-top: 25px;
+  background-color: white;
+  border-top-left-radius: 5vw;
+  border-top-right-radius: 5vw;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+body .App .main-content {
+  width: 1440px;
+}
+body .App .main-content-login {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+body .App .main-content-login-btn {
+  display: flex;
+  justify-content: space-around;
+  background-color: #DBD962;
+  padding: 1%;
+  border: none;
+  border-radius: 1vw;
+  font-family: "Hero Light";
+  font-size: 1.3vw;
+  margin-right: 1vw;
+}
+body .App .main-content-login-btn-icon {
+  display: block;
+  margin-right: 5px;
+  font-size: 1.3vw;
+  color: #1C4E55;
+}
+body .App .main-content-login-register {
+  background-color: #DBD962;
+  padding: 1%;
+  border: none;
+  border-radius: 1vw;
+  font-family: "Hero Light";
+  font-size: 1.3vw;
+}
+body .App .main-content-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  width: 85%;
 }

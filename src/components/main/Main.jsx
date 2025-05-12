@@ -1,5 +1,7 @@
 import React from 'react';
 import "../header/background/css/style.css";
+import Category from "./../category/Category";
+import CategoryExemplar from "../category/CategoryExemplar";
 
 //Добавляем иконочные шрифты FontAwesome
 
@@ -18,9 +20,12 @@ const Main = () => {
                     <button className="main-content-login-register">
                         Зарегистрироваться
                     </button>
-                </div>       
-                <hr className="main-content-line"/>                 
-            </main>
+                </div>
+                <hr className="main-content-line"/>
+                <Category/>
+                <hr className="main-content-line"/>                      
+            </main> 
+            <CategoryExemplar/> 
         </div>
     );
 };

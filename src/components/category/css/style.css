@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.category {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.category-content {
+  width: 100%;
+  background-color: white;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+}
+.category-content-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.category-content-nav-link {
+  font-family: "Hero Light";
+  font-size: 2vw;
+  transition: 0.5s;
+}
+.category-content-nav-link:hover {
+  font-size: 2.1vw;
+  transition: 0.5s;
+}
+.category-exemplars {
+  position: absolute;
+  width: 100%;
+  margin-top: 2%;
+  background-color: #52C0C5;
+  display: flex;
+  justify-content: center;
+}

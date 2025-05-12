@@ -136,8 +136,7 @@ body .App .background-fone .form-container-search-btn {
   background-image: url("../../img/search_img.png");
   background-size: none;
   background-repeat: no-repeat;
-  border-width: 0.5px;
-  border-color: #1C4E55;
+  border: none;
   border-radius: 1vw;
   background-color: #DBD962;
 }
@@ -148,21 +147,25 @@ body .App .background-fone .form-container-search-btn .fa-magnifying-glass {
 }
 body .App .main {
   display: block;
+  height: 100vh;
   margin-top: 25px;
   background-color: white;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
   padding-top: 2%;
-  padding-left: 3%;
   padding-right: 3%;
 }
 body .App .main-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 1440px;
 }
 body .App .main-content-login {
   display: flex;
   justify-content: start;
   width: 100%;
+  padding-left: 3%;
 }
 body .App .main-content-login-btn {
   display: flex;
@@ -194,6 +197,5 @@ body .App .main-content-line {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1vw;
-  margin-bottom: 1vw;
   width: 85%;
 }

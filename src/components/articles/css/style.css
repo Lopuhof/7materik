@@ -11,7 +11,9 @@
   width: 100%;
 }
 .articles-exemplar {
-  width: 26%;
+  width: 100%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
 }
 .articles-exemplar-photo {
   display: block;
@@ -19,13 +21,15 @@
   margin-right: auto;
 }
 .articles-exemplar-photo-img {
-  width: 100%;
+  width: 85%;
+  border-top-left-radius: 1.2vw;
+  border-top-right-radius: 1.2vw;
 }
 .articles-exemplar-text {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 85%;
 }
 .articles-exemplar-text-title {
   display: block;

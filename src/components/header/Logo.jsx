@@ -1,5 +1,5 @@
 import React from "react";
-import "./background/css/style.css";
+import "./background/css/background.css";
 
 //Добавляем изображения
 

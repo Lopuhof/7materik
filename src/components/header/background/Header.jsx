@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/style.css";
+import "./css/background.css";
 import Logo from "../Logo";
 import Search from "../Search";
 

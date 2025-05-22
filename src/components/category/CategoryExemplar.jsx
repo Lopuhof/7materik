@@ -1,6 +1,6 @@
 import React from "react";
 import Articles from "../articles/Articles";
-import "./css/style.css";
+import "./css/category.css";
 
 const CategoryExemplar = () => {
     return (

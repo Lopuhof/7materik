@@ -1,5 +1,5 @@
 import React from 'react';
-import "../header/background/css/style.css";
+import "../header/background/css/background.css";
 import Category from "./../category/Category";
 import CategoryExemplar from "../category/CategoryExemplar";
 

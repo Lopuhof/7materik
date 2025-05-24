@@ -4,11 +4,9 @@
   padding: 0;
 }
 
-.articles {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../../../fonts/Lato-Regular.ttf");
 }
 .articles-exemplar {
   width: 95%;
@@ -56,6 +54,7 @@
   padding-top: 0.3vw;
   padding-right: 1vw;
   text-align: right;
+  font-family: "Hero Light";
 }
 .articles-exemplar-text-annotation {
   display: block;
@@ -66,7 +65,12 @@
   margin-left: auto;
   margin-right: auto;
   background-color: white;
+  font-family: "Lato Regular";
+  color: #1C4E55;
 }
 .articles-exemplar-text-annotation-data {
+  display: block;
+  margin-top: 0.5vw;
+  text-align: right;
   font-family: "Hero Light";
 }

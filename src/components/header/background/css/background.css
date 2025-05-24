@@ -17,90 +17,94 @@ body {
   padding-top: 1.5%;
 }
 body .App {
+  position: relative;
+}
+body .App-content {
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 1440px;
 }
-body .App .background-fone {
+body .App-content .background-fone {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-body .App .background-fone .logo {
+body .App-content .background-fone .logo {
   display: block;
 }
-body .App .background-fone .logo-main {
+body .App-content .background-fone .logo-main {
   display: flex;
   justify-content: center;
 }
-body .App .background-fone .logo-main-img {
+body .App-content .background-fone .logo-main-img {
   display: block;
   width: 13vw;
   height: 14vw;
 }
-body .App .background-fone .logo-main-img-png {
+body .App-content .background-fone .logo-main-img-png {
   display: block;
   width: 13vw;
   height: 14vw;
 }
-body .App .background-fone .logo-main-text {
+body .App-content .background-fone .logo-main-text {
   text-align: center;
   font-family: "Goznak Semi Bold";
   font-size: 7vw;
   line-height: 1;
 }
-body .App .background-fone .logo-lines {
+body .App-content .background-fone .logo-lines {
   display: flex;
   justify-content: center;
   margin-top: 0.5vw;
 }
-body .App .background-fone .logo-lines-left {
+body .App-content .background-fone .logo-lines-left {
   height: 0.5px;
   background-color: #1C4E55;
   width: 20%;
   margin-top: 1vw;
   border: none;
 }
-body .App .background-fone .logo-lines-img {
+body .App-content .background-fone .logo-lines-img {
   margin-left: 1vw;
   margin-right: 1vw;
 }
-body .App .background-fone .logo-lines-img-icon {
+body .App-content .background-fone .logo-lines-img-icon {
   font-size: 2vw;
   color: #1C4E55;
 }
-body .App .background-fone .logo-lines-right {
+body .App-content .background-fone .logo-lines-right {
   height: 0.5px;
   background-color: #1C4E55;
   width: 20%;
   margin-top: 1vw;
   border: none;
 }
-body .App .background-fone .logo-slogan {
+body .App-content .background-fone .logo-slogan {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-body .App .background-fone .logo-slogan-text {
+body .App-content .background-fone .logo-slogan-text {
   display: block;
   text-align: center;
   margin-top: 1vw;
   font-family: "Hero Light";
   font-size: 2vw;
 }
-body .App .background-fone .logo .solid-line {
+body .App-content .background-fone .logo .solid-line {
   display: flex;
   justify-content: center;
 }
-body .App .background-fone .logo .solid-line-hr {
+body .App-content .background-fone .logo .solid-line-hr {
   width: 44%;
   height: 0.5px;
   margin-top: 2.5vw;
   border: none;
   background-color: #1C4E55;
 }
-body .App .background-fone .form-container {
+body .App-content .background-fone .form-container {
   display: flex;
   justify-content: center;
   width: 1440px;
@@ -108,13 +112,13 @@ body .App .background-fone .form-container {
   margin-right: auto;
   margin-top: 25px;
 }
-body .App .background-fone .form-container-search {
+body .App-content .background-fone .form-container-search {
   display: flex;
   justify-content: center;
   width: 45%;
   height: 40px;
 }
-body .App .background-fone .form-container-search-input {
+body .App-content .background-fone .form-container-search-input {
   width: 85%;
   margin-right: 2%;
   padding-left: 3%;
@@ -122,16 +126,16 @@ body .App .background-fone .form-container-search-input {
   border: none;
   border-radius: 1vw;
 }
-body .App .background-fone .form-container-search-input::placeholder {
+body .App-content .background-fone .form-container-search-input::placeholder {
   font-family: "Hero Light";
   font-style: bold;
   font-size: 1vw;
   color: #1C4E55;
 }
-body .App .background-fone .form-container-search-input:focus {
+body .App-content .background-fone .form-container-search-input:focus {
   outline: solid 1px #1C4E55;
 }
-body .App .background-fone .form-container-search-btn {
+body .App-content .background-fone .form-container-search-btn {
   width: 10%;
   background-image: url("../../img/search_img.png");
   background-size: none;
@@ -140,34 +144,38 @@ body .App .background-fone .form-container-search-btn {
   border-radius: 1vw;
   background-color: #DBD962;
 }
-body .App .background-fone .form-container-search-btn .fa-magnifying-glass {
+body .App-content .background-fone .form-container-search-btn .fa-magnifying-glass {
   font-family: font-awesome;
   font-size: 2vw;
   color: #1C4E55;
 }
-body .App .main {
+body .App-content .main {
   display: block;
+  width: 100%;
   height: 100vh;
-  margin-top: 25px;
+  margin-top: -725px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
   padding-top: 2%;
-  padding-right: 3%;
+  padding-left: 2%;
+  z-index: 6;
 }
-body .App .main-content {
+body .App-content .main-content {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 1440px;
 }
-body .App .main-content-login {
+body .App-content .main-content-login {
   display: flex;
   justify-content: start;
   width: 100%;
   padding-left: 3%;
 }
-body .App .main-content-login-btn {
+body .App-content .main-content-login-btn {
   display: flex;
   justify-content: space-around;
   background-color: #DBD962;
@@ -178,13 +186,13 @@ body .App .main-content-login-btn {
   font-size: 1.3vw;
   margin-right: 1vw;
 }
-body .App .main-content-login-btn-icon {
+body .App-content .main-content-login-btn-icon {
   display: block;
   margin-right: 5px;
   font-size: 1.3vw;
   color: #1C4E55;
 }
-body .App .main-content-login-register {
+body .App-content .main-content-login-register {
   background-color: #DBD962;
   padding: 1%;
   border: none;
@@ -192,7 +200,7 @@ body .App .main-content-login-register {
   font-family: "Hero Light";
   font-size: 1.3vw;
 }
-body .App .main-content-line {
+body .App-content .main-content-line {
   display: block;
   margin-left: auto;
   margin-right: auto;

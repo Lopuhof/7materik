@@ -1,0 +1,81 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@font-face 
+    font-family: "Lato Regular"
+    src: url("../../../fonts/Lato-Regular.ttf")
+
+@font-face 
+    font-family: "Hero Light"
+    src: url("../../../fonts/ofont.ru_Hero.ttf")
+
+.articlesRedact
+    position: fixed
+    display: grid
+    justify-items: center
+    align-items: center
+    width: 100vw
+    height: 100vh
+    padding-left: 5%
+    padding-right: 5%
+    background-color: rgba(0, 0, 0, 0.4)
+    top: 0
+    left: 0
+
+    z-index: 999
+    &-content
+        background-color: white
+        padding-left: 5%
+        padding-right: 5%
+        padding-top: 1.5%
+        padding-bottom: 2%
+        border-radius: 12px
+        &-text
+            display: grid
+            justify-items: center
+            &-title
+                font-family: "Hero Light"
+                font-size: 3vw
+                margin-bottom: 0.4%
+            &-line
+                display: grid
+                justify-items: center
+                width: 100%
+                margin-top: 1%
+                margin-bottom: 1%
+            &-annotation
+                width: 100%
+        &-forms
+            &-articlesTitle
+                &-hint
+                    display: inline-block
+                    padding-top: 1%
+                    padding-left: 1%
+                    padding-right: 1%
+                    padding-bottom: 1%
+                    background-color: rgb(30, 55, 0)
+                    border-top-right-radius: 12px
+                    border-top-left-radius: 12px
+                    margin-top: 1%
+                    font-family: "Hero Light"
+                    color: rgb(219, 217, 98)
+                &-input
+                    width: 75%
+                    height: 3vw
+                    padding-left: 0.7%
+                    padding-right: 0.7%
+                    font-family: "Hero Light"
+                    font-size: 1.3vw
+                    border: 0.7px solid rgb(30, 55, 0)
+                    border-top-right-radius: 12px
+                    border-bottom-right-radius: 12px
+                    border-bottom-left-radius: 12px
+                &-input::placeholder
+                    font-family: "Hero Light"
+                    font-size: 1.3vw
+                &-input:focus
+                    box-shadow: 0 0 7px 0 rgb(80, 193, 201)
+                    outline: none
+                    

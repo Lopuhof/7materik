@@ -1,7 +1,9 @@
 import React from 'react';
+import {useState} from 'react';
 import "../header/background/css/background.css";
 import Category from "./../category/Category";
 import CategoryExemplar from "../category/CategoryExemplar";
+import ArticlesRedact from "../articlesRedact/ArticlesRedact";
 
 //Добавляем иконочные шрифты FontAwesome
 
@@ -9,6 +11,14 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUser} from "@fortawesome/free-solid-svg-icons";
 
 const Main = () => {
+    
+const [click, setClick] = useState(0);
+const [articlesRedactActive, setArticlesRedactActive] = useState(true);
+
+function callArticlesRedact() {
+    setClick()
+}
+
     return (
         <div className="main">
             <main className="main-content">
@@ -20,12 +30,16 @@ const Main = () => {
                     <button className="main-content-login-register">
                         Зарегистрироваться
                     </button>
+                    <button className="test-button" onClick={callArticlesRedact}>
+                        test-button
+                    </button>
                 </div>
                 <hr className="main-content-line"/>
                 <Category/>
                 <hr className="main-content-line"/>                      
             </main> 
             <CategoryExemplar/> 
+            <ArticlesRedact active={articlesRedactActive} setArticlesRedactActive={setArticlesRedactActive}/>
         </div>
     );
 };

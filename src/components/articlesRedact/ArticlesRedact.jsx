@@ -22,9 +22,41 @@ const ArticlesRedact = ({active, setActive}) => {
                             <input type="text" className="articlesRedact-content-forms-articlesTitle-input" placeholder="Напишите сюда название статьи..."/>
                         </form>
                     </div>
-                    <div className="articlesRedact-content-forms-articlesText"></div>
-                    <div className="articlesRedact-content-forms-articlesCategory"></div>
-                    <div className="articlesRedact-content-forms-articlesImages"></div>
+                    <div className="articlesRedact-content-forms-articlesText-hint">
+                        Текст статьи:
+                    </div>
+                    <form action="#">
+                        <textarea placeholder="Пишите (или вставьте) сюда текст вашей статьи" className="articlesRedact-content-forms-articlesText-textarea"/>
+                    </form>
+                    <div className="articlesRedact-content-forms-articlesCategory">
+                        <div className="articlesRedact-content-forms-articlesCategory-hint">
+                            Выберите категорию, к которой относится Ваша статья
+                        </div>
+                        <form action="#">
+                            <select name="category" id="#" className="articlesRedact-content-forms-articlesCategory-category">
+                                <option value="history">История</option>
+                                <option value="literature">Литература</option>
+                                <option value="fashion">Мода</option>
+                                <option value="cinema">Кино</option>
+                                <option value="psyhology">Психология</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div className="articlesRedact-content-forms-articlesImages">
+                        <div className="articlesRedact-content-forms-articlesImages-hint">
+                            Вставьте изображения, которые будут использоваться в качестве иллюстраций
+                        </div>
+                        <form action="#" className="articlesRedact-content-forms-articlesImages-manyInputs">
+                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
+                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
+                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
+                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
+                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
+                        </form>
+                    </div>
+                    <div className="articlesRedact-content-forms-articlesQuotes">
+                        
+                    </div>
                 </div>
             </div>
         </div>

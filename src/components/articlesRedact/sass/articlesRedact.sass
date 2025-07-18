@@ -23,6 +23,14 @@
     border-bottom-right-radius: 12px
     border-bottom-left-radius: 12px
 
+@mixin articlesRedactStyleOfButton
+    padding: 5%
+    background-color: #DBD962
+    font-family: "Hero Light"
+    font-size: 1.3vw
+    border-radius: 12px
+    border: none
+
 @font-face 
     font-family: "Lato Regular"
     src: url("../../../fonts/Lato-Regular.ttf")
@@ -66,14 +74,18 @@
                 font-size: 3vw
                 margin-bottom: 0.4%
             &-line
-                display: grid
-                justify-items: center
-                width: 100%
+                display: block
+                width: 85%
                 margin-top: 1%
                 margin-bottom: 1%
+                margin-left: auto
+                margin-right: auto
             &-annotation
                 width: 100%
+                font-family: "Hero Light"
+                font-size: 1.2vw
         &-forms
+            position: relative
             &-articlesTitle
                 &-hint
                     @include articlesRedactStyleOfHint
@@ -88,6 +100,10 @@
             &-articlesText  
                 &-hint
                     @include articlesRedactStyleOfHint
+            &-textareaForm
+                display: grid
+                grid-template-columns: 1
+                grid-template-rows: 1fr 3fr
                 &-textarea
                     width: 75%
                     resize: none
@@ -108,6 +124,8 @@
                 &-textarea:focus
                     box-shadow: 0 0 7px 0 rgb(80, 193, 201)
                     outline: none
+                &-btn
+                    @include articlesRedactStyleOfButton
             &-articlesCategory
                 &-hint
                     @include articlesRedactStyleOfHint
@@ -120,7 +138,41 @@
                 &-hint
                     @include articlesRedactStyleOfHint
                 &-manyInputs
+                    display: grid
+                    grid-template-columns: repeat(5, 1fr)
+                    gap: 1%
+                    justify-items: center
+                    width: 75%
+                    padding: 0.7%
+                    border: 0.7px solid rgb(30, 55, 0)
+                    border-top-right-radius: 12px
+                    border-bottom-right-radius: 12px
+                    border-bottom-left-radius: 12px
                     &-input
                         height: 10vw
                         border: 2px solid red
+                        border-radius: 12px
                         width: 10vw
+            &-articlesQuotes
+                &-hint
+                    @include articlesRedactStyleOfHint
+                &-input
+                    @include articlesRedactStyleOfInput
+                &-input:focus
+                    box-shadow: 0 0 7px 0 rgb(80, 193, 201)
+                    outline: none
+                &-input:nth-child(n + 2)
+                    margin-top: 0.8%
+                    border-top-left-radius: 12px
+        &-lastForm
+            display: grid
+            grid-template-columns: repeat(2, 25%)
+            gap: 1.5%
+            &-btn
+                @include articlesRedactStyleOfButton
+        &-lastHint
+            margin-top: 1%
+            margin-bottom: 1%
+            font-family: "Hero Light"
+            font-size: 1vw
+            color: rgb(30, 55, 0)

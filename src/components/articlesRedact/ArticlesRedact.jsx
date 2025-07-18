@@ -1,6 +1,10 @@
 import React from 'react';
 import "./css/articlesRedact.css";
 
+//Подключаем иконочные шрифты
+
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 const ArticlesRedact = ({active, setActive}) => {
     return (
         <div className="articlesRedact">
@@ -25,8 +29,11 @@ const ArticlesRedact = ({active, setActive}) => {
                     <div className="articlesRedact-content-forms-articlesText-hint">
                         Текст статьи:
                     </div>
-                    <form action="#">
-                        <textarea placeholder="Пишите (или вставьте) сюда текст вашей статьи" className="articlesRedact-content-forms-articlesText-textarea"/>
+                    <form action="#" className="articlesRedact-content-forms-textareaForm">
+                        <textarea placeholder="Пишите (или вставьте) сюда текст вашей статьи" className="articlesRedact-content-forms-textareaForm-textarea"/>
+                        <button className="articlesRedact-content-forms-textareaForm-btn">
+                            Очистить
+                        </button>
                     </form>
                     <div className="articlesRedact-content-forms-articlesCategory">
                         <div className="articlesRedact-content-forms-articlesCategory-hint">
@@ -55,9 +62,30 @@ const ArticlesRedact = ({active, setActive}) => {
                         </form>
                     </div>
                     <div className="articlesRedact-content-forms-articlesQuotes">
-                        
+                        <div className="articlesRedact-content-forms-articlesQuotes-hint">
+                            Напишите наиболее значимые цитаты, которые будут выделены отдельно в тексте статьи...
+                        </div>
+                        <form action="#">
+                            <input type="text" className="articlesRedact-content-forms-articlesQuotes-input"/>
+                            <input type="text" className="articlesRedact-content-forms-articlesQuotes-input"/>
+                            <input type="text" className="articlesRedact-content-forms-articlesQuotes-input"/>
+                            <input type="text" className="articlesRedact-content-forms-articlesQuotes-input"/>
+                            <input type="text" className="articlesRedact-content-forms-articlesQuotes-input"/>  
+                        </form>
                     </div>
                 </div>
+                <hr className="articlesRedact-content-text-line"/>
+                <div className="articlesRedact-content-lastHint">
+                    Проверьте всё, что написали: синтаксис, логику, пунктуацию, добавленные иллюстрации и нажмите кнопку "Отправить".
+                </div>
+                <form action="#" className="articlesRedact-content-lastForm">
+                    <button className="articlesRedact-content-lastForm-btn">
+                        Отправить
+                    </button>
+                    <button className="articlesRedact-content-lastForm-btn">
+                        Отмена
+                    </button>
+                </form>
             </div>
         </div>
     );

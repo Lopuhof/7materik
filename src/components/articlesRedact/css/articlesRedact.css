@@ -45,14 +45,20 @@
   margin-bottom: 0.4%;
 }
 .articlesRedact-content-text-line {
-  display: grid;
-  justify-items: center;
-  width: 100%;
+  display: block;
+  width: 85%;
   margin-top: 1%;
   margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .articlesRedact-content-text-annotation {
   width: 100%;
+  font-family: "Hero Light";
+  font-size: 1.2vw;
+}
+.articlesRedact-content-forms {
+  position: relative;
 }
 .articlesRedact-content-forms-articlesTitle-hint {
   display: inline-block;
@@ -100,7 +106,12 @@
   font-family: "Hero Light";
   color: #dbd962;
 }
-.articlesRedact-content-forms-articlesText-textarea {
+.articlesRedact-content-forms-textareaForm {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 3fr;
+}
+.articlesRedact-content-forms-textareaForm-textarea {
   width: 75%;
   resize: none;
   font-family: "Hero Light";
@@ -115,13 +126,21 @@
   padding-bottom: 0.7%;
   height: 30vw;
 }
-.articlesRedact-content-forms-articlesText-textarea::placeholder {
+.articlesRedact-content-forms-textareaForm-textarea::placeholder {
   font-family: "Hero Light";
   font-size: 1.3vw;
 }
-.articlesRedact-content-forms-articlesText-textarea:focus {
+.articlesRedact-content-forms-textareaForm-textarea:focus {
   box-shadow: 0 0 7px 0 #50c1c9;
   outline: none;
+}
+.articlesRedact-content-forms-textareaForm-btn {
+  padding: 5%;
+  background-color: #DBD962;
+  font-family: "Hero Light";
+  font-size: 1.3vw;
+  border-radius: 12px;
+  border: none;
 }
 .articlesRedact-content-forms-articlesCategory-hint {
   display: inline-block;
@@ -165,8 +184,74 @@
   font-family: "Hero Light";
   color: #dbd962;
 }
+.articlesRedact-content-forms-articlesImages-manyInputs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1%;
+  justify-items: center;
+  width: 75%;
+  padding: 0.7%;
+  border: 0.7px solid #1e3700;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
 .articlesRedact-content-forms-articlesImages-manyInputs-input {
   height: 10vw;
   border: 2px solid red;
+  border-radius: 12px;
   width: 10vw;
+}
+.articlesRedact-content-forms-articlesQuotes-hint {
+  display: inline-block;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  background-color: #1e3700;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  margin-top: 1%;
+  font-family: "Hero Light";
+  color: #dbd962;
+}
+.articlesRedact-content-forms-articlesQuotes-input {
+  width: 75%;
+  height: 3vw;
+  padding-left: 0.7%;
+  padding-right: 0.7%;
+  font-family: "Hero Light";
+  font-size: 1.3vw;
+  border: 0.7px solid #1e3700;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.articlesRedact-content-forms-articlesQuotes-input:focus {
+  box-shadow: 0 0 7px 0 #50c1c9;
+  outline: none;
+}
+.articlesRedact-content-forms-articlesQuotes-input:nth-child(n + 2) {
+  margin-top: 0.8%;
+  border-top-left-radius: 12px;
+}
+.articlesRedact-content-lastForm {
+  display: grid;
+  grid-template-columns: repeat(2, 25%);
+  gap: 1.5%;
+}
+.articlesRedact-content-lastForm-btn {
+  padding: 5%;
+  background-color: #DBD962;
+  font-family: "Hero Light";
+  font-size: 1.3vw;
+  border-radius: 12px;
+  border: none;
+}
+.articlesRedact-content-lastHint {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: "Hero Light";
+  font-size: 1vw;
+  color: #1e3700;
 }

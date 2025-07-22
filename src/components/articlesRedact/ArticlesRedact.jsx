@@ -4,6 +4,7 @@ import "./css/articlesRedact.css";
 //Подключаем иконочные шрифты
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faImage} from "@fortawesome/free-solid-svg-icons";
 
 const ArticlesRedact = ({active, setActive}) => {
     return (
@@ -54,11 +55,26 @@ const ArticlesRedact = ({active, setActive}) => {
                             Вставьте изображения, которые будут использоваться в качестве иллюстраций
                         </div>
                         <form action="#" className="articlesRedact-content-forms-articlesImages-manyInputs">
-                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
-                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
-                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
-                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
-                            <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-input"/>
+                            <label htmlFor="" className="articlesRedact-content-forms-articlesImages-manyInputs-label">
+                                <FontAwesomeIcon icon={faImage} className="fa articlesRedact-content-forms-articlesImages-manyInputs-label-image"/>
+                                <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-label-input"/>
+                            </label>
+                            <label htmlFor="" className="articlesRedact-content-forms-articlesImages-manyInputs-label">
+                                <FontAwesomeIcon icon={faImage} className="fa articlesRedact-content-forms-articlesImages-manyInputs-label-image"/>
+                                <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-label-input"/>
+                            </label>
+                            <label htmlFor="" className="articlesRedact-content-forms-articlesImages-manyInputs-label">
+                                <FontAwesomeIcon icon={faImage} className="fa articlesRedact-content-forms-articlesImages-manyInputs-label-image"/>
+                                <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-label-input"/>
+                            </label>
+                            <label htmlFor="" className="articlesRedact-content-forms-articlesImages-manyInputs-label">
+                                <FontAwesomeIcon icon={faImage} className="fa articlesRedact-content-forms-articlesImages-manyInputs-label-image"/>
+                                <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-label-input"/>
+                            </label>
+                            <label htmlFor="#" className="articlesRedact-content-forms-articlesImages-manyInputs-label">
+                                <FontAwesomeIcon icon={faImage} className="fa articlesRedact-content-forms-articlesImages-manyInputs-label-image"/>
+                                <input type="file" className="articlesRedact-content-forms-articlesImages-manyInputs-label-input"/>
+                            </label>
                         </form>
                     </div>
                     <div className="articlesRedact-content-forms-articlesQuotes">

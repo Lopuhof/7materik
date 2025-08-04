@@ -6,8 +6,6 @@ const CategoryExemplar = () => {
     return (
         <div className="category-exemplars">
             <Articles/>
-            <Articles/>
-            <Articles/>
         </div>
     );
 };

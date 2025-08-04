@@ -1,6 +1,13 @@
 import React from "react";
 import "./css/articles.css";
 import ArticleImage from "./image/goodImage.jpg";
+import cinema from "../../data/cinema";
+import fashion from "../../data/fashion";
+import history from "../../data/history";
+import literature from "../../data/literature";
+import psyhologies from "../../data/psyhologies";
+
+import {useState} from "react";
 
 const Articles = () => {
     return (

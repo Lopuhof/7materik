@@ -12,12 +12,7 @@ import {faUser} from "@fortawesome/free-solid-svg-icons";
 
 const Main = () => {
     
-const [click, setClick] = useState(0);
 const [articlesRedactActive, setArticlesRedactActive] = useState(true);
-
-function callArticlesRedact() {
-    setClick()
-}
 
     return (
         <div className="main">
@@ -30,7 +25,7 @@ function callArticlesRedact() {
                     <button className="main-content-login-register">
                         Зарегистрироваться
                     </button>
-                    <button className="test-button" onClick={callArticlesRedact}>
+                    <button className="test-button" onClick={() => setArticlesRedactActive(true)}>
                         test-button
                     </button>
                 </div>

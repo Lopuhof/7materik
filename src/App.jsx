@@ -1,7 +1,6 @@
 import React from 'react';
-import Fone from './fone/Fone';
-import LeftPanel from './leftPanel/LeftPanel';
-import LogoName from './logoName/LogoName';
+
+import Homepage from './components/homepage/Homepage';
 
 import './app.sass';
 
@@ -9,9 +8,7 @@ import './app.sass';
 const App = () => {
     return (
         <div>
-            <Fone />
-            <LeftPanel />
-            <LogoName />
+            <Homepage />
         </div>
     );
 };

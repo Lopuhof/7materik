@@ -14,6 +14,9 @@ const LogoName = () => {
                     материк
                 </span> 
             </div>
+            <span className="logoAndName-slogan">
+                Иногда лучше читать, чем говорить...
+            </span>
         </div>
     );
 };

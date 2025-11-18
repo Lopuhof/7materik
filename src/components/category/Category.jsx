@@ -1,11 +1,15 @@
 import React from 'react';
 
+import CategoryTitle from './categoryHeader/CategoryTitle';
+import CategoryElements from './categoryElements/CategoryElements';
+
 import './category.sass';
 
 const Category = () => {
     return (
         <div className='category'>
-            Тут будет контент
+            <CategoryTitle />
+            <CategoryElements />
         </div>
     );
 };

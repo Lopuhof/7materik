@@ -1,3 +1,9 @@
+@keyframes fone-animation 
+    0%
+        background-size: 100%
+    100%
+        background-size: 160%
+    
 *
     box-sizing: border-box
     margin: 0
@@ -8,7 +14,12 @@ body
     background-image: url('../../images/fone_7materik.jpg')
     background-size: cover
     background-attachment: fixed
+
     z-index: 1
+    animation-name: fone-animation
+    animation-duration: 10s
+    animation-iteration-count: infinite
+    animation-direction: alternate
 
 body::after 
   content: ''
@@ -19,6 +30,7 @@ body::after
   left: 0
   right: 0
   opacity: 0.9
+
   z-index: 2
 
 

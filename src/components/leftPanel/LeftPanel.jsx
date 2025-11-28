@@ -4,10 +4,16 @@ import './leftPanel.sass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
-const LeftPanel = () => {
+function LeftPanel() {
     return (
         <div className='leftPanel'>
-            <FontAwesomeIcon icon={ faCircleUser } className='leftPanel-faCircleUser' />
+            <div className="leftPanel-leftPanelContent">
+                <FontAwesomeIcon icon={ faCircleUser } className='leftPanel-leftPanelContent-faCircleUser' />
+                <button 
+                    className="leftPanel-leftPanelContent-logIn"
+                >Войти
+                </button>
+            </div>
         </div>
     );
 };

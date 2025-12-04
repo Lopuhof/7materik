@@ -1,0 +1,169 @@
+@font-face 
+    font-family: 'Podkova Bold'
+    src: url('../../fonts/Podkova.ttf')
+
+@font-face 
+    font-family: 'PFDinTextCondPro-Thin'
+    src: url('../../fonts/PF Din Text Cond Pro.ttf')
+
+@mixin logInHint-and-passwordHint
+    font-family: 'Podkova Bold'
+    font-size: 1vw
+    text-align: end
+
+@mixin logInInput-and-passwordInput
+    width: 100%
+    border: 1px solid #0D274C
+    border-radius: 6px
+    padding-left: 0.4vw
+    padding-top: 0.4vw
+    padding-right: 1vw
+    padding-bottom: 0.4vw
+    height: 30px
+
+@mixin logInInput-and-passwordInput-focus
+    width: 100%
+    outline: none
+    border-radius: 6px
+    padding-left: 0.4vw
+    padding-top: 0.4vw
+    padding-right: 1vw
+    padding-bottom: 0.4vw
+    height: 30px
+    box-shadow: 0 0 20px #0197B8
+
+@mixin logInInput-placeholder-and-passwordInput-placeholder
+    font-family: 'PFDinTextCondPro-Thin'
+    font-size: 0.8vw
+
+@mixin buttons-style
+    display: block
+    width: 12vw
+    margin-top: 0.5vw
+    margin-left: auto
+    margin-right: auto
+    border: 0 solid #000000
+    background-color: #0197B8
+    border-radius: 0.3vw
+    padding-top: 3%
+    padding-right: 3%
+    padding-bottom: 3%
+    padding-left: 3%
+    font-family: 'Podkova Bold'
+    font-size: 1vw
+    color: #FFFFFF
+    transition: .4s
+
+@mixin buttons-style-hover
+    cursor: pointer
+    transform: scale(1.1)
+
+@keyframes appearance 
+    0%
+        opacity: 0 
+    100%
+        opacity: 1
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+.logInModalWindow
+    position: fixed
+    width: 100wh
+    height: 100vh
+    background-color: rgba(0, 0, 0, 0.88)
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+    z-index: 10
+
+    animation: appearance 0.5s forwards
+    &-content
+        width: 100wh
+        height: 100vh
+        display: grid
+        justify-items: center
+        align-items: center
+        &-box 
+            display: grid
+            justify-content: center
+            align-items: center
+            width: 27vw
+            background-color: #FFFFFF
+            border-radius: 3%
+            padding-top: 1vw
+            padding-right: 1vw
+            padding-bottom: 1vw
+            padding-left: 1vw
+            &-hellow
+                font-family: 'Podkova Bold'
+                font-size: 1.3vw
+                width: 100%
+                text-align: center
+            &-faCircleUser
+                display: block
+                width: 100%
+                font-size: 10vw
+                color: #0197B8
+                margin-top: 1vw
+            &-identification
+                display: grid
+                grid-template-columns: 1fr 3fr
+                grid-template-rows: 1fr 1fr
+                gap: 0.5vw
+                width: 100%
+                margin-top: 1vw
+                &-logInHint
+                    @include logInHint-and-passwordHint
+                &-logInInput  
+                    @include logInInput-and-passwordInput
+                &-logInInput:focus
+                    @include logInInput-and-passwordInput-focus
+                &-logInInput::placeholder
+                    @include logInInput-placeholder-and-passwordInput-placeholder                
+                &-passwordHint
+                    @include logInHint-and-passwordHint
+                &-passwordInput
+                    @include logInInput-and-passwordInput
+                &-passwordInput:focus
+                    @include logInInput-and-passwordInput-focus
+                &-passwordInput::placeholder
+                    @include logInInput-placeholder-and-passwordInput-placeholder
+            &-button 
+                @include buttons-style
+                margin-top: 1vw
+            &-button:hover
+                @include buttons-style-hover 
+            &-registration
+                display: grid
+                grid-template-columns: 1fr
+                grid-template-rows: 1fr 2fr
+                width: 100%
+                margin-top: 1vw
+                &-hint
+                    font-family: 'Podkova Bold'
+                    text-align: center
+                &-button
+                    @include buttons-style
+                &-button:hover
+                    @include buttons-style-hover
+            &-faTimesCircle
+                position: absolute
+                background-color: transparent
+                border: none
+                top: 0.5vw
+                right: 0.5vw
+                transition: .4s
+                font-size: 1.2vw
+                color: #0197B8 
+            &-faTimesCircle:hover
+                cursor: pointer
+                transform: scale(1.2) 
+                            
+                
+                    
+

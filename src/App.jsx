@@ -1,9 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
+import { BrowserRouter, Route } from 'react-router';
 
 import Homepage from './components/homepage/Homepage';
 import LeftPanel from './components/leftPanel/LeftPanel';
 import LogInModalWindow from './components/logIn/LogInModalWindow';
+import Navigation from './components/navigation/Navigation';
 
 import './app.sass';
 
@@ -24,10 +26,13 @@ const App = () => {
                 openModalWindow={ openModalWindow }
                 modal={ modal } 
                 setModal={ setModal }/>
+            <BrowserRouter>
+                <Navigation />
+            </BrowserRouter>  
             <div className='appContainer'>
                 <Homepage />
             </div>
-            { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> } 
+            { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> }  
         </div>
     );
 };

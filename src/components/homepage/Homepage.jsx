@@ -1,8 +1,9 @@
 import React from 'react';
 
+import Category from '../category/Category';
 import Fone from '../fone/Fone';
 import LogoName from '../logoName/LogoName';
-import Category from '../category/Category';
+import Navigation from '../navigation/Navigation';
 
 import './homepage.sass';
 

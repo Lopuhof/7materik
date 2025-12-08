@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { BrowserRouter, Route } from 'react-router';
 
 import Homepage from './components/homepage/Homepage';
 import LeftPanel from './components/leftPanel/LeftPanel';
@@ -26,11 +25,8 @@ const App = () => {
                 openModalWindow={ openModalWindow }
                 modal={ modal } 
                 setModal={ setModal }/>
-            <BrowserRouter>
-                <Navigation />
-            </BrowserRouter>  
             <div className='appContainer'>
-                <Homepage />
+                <Navigation />
             </div>
             { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> }  
         </div>

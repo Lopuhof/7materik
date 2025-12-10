@@ -5,7 +5,7 @@ import './categoryTitle.sass';
 const CategoryTitle = () => {
     return (
         <div className='categoryTitle'>
-            Рубрики:
+            Актуальное:
         </div>
     );
 };

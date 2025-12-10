@@ -4,8 +4,8 @@ import './literature.sass';
 
 const Literature = () => {
     return (
-        <div>
-            Здарова, отец!
+        <div >
+            
         </div>
     );
 };

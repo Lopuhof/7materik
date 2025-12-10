@@ -1,3 +1,7 @@
+@font-face 
+    font-family: 'PFDinTextCondPro-Thin'
+    src: url('../../fonts/PF Din Text Cond Pro.ttf')
+    
 *
     margin: 0
     padding: 0
@@ -5,12 +9,23 @@
 
 .navigation
     display: block
-    width: 80%
     margin-left: auto
     margin-right: auto
     &-container
-        display: grid
-        justify-content: center
-        align-items: center
-        grid-template-columns: repeat(7, 1fr) 
+        display: flex
+        justify-content: space-around
         padding-top: 2%
+        &-item
+            display: block
+            font-family: 'PFDinTextCondPro-Thin'
+            text-align: center
+            word-break: break-all
+            text-decoration: none
+            color: #0D274C
+
+            transition: 0.4s
+        &-item:hover
+            text-decoration: underline
+            transform: scale(1.4)
+
+            transition: 0.4s

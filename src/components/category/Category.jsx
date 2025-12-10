@@ -1,15 +1,20 @@
 import React from 'react';
-
-import CategoryTitle from './categoryHeader/CategoryTitle';
-import CategoryElements from './categoryElements/CategoryElements';
+import { Link } from 'react-router';
 
 import './category.sass';
+
+import testImage from '../../images/test-image/test_image.png';
 
 const Category = () => {
     return (
         <div className='category'>
-            <CategoryTitle />
-            <CategoryElements />
+            <div className='category-title'>
+                <p>Категория</p>
+                <hr className='category-title-line' />
+            </div>
+            <div className='category-cardsContainer'>
+                
+            </div>
         </div>
     );
 };

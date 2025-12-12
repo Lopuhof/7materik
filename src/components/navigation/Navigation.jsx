@@ -12,7 +12,7 @@ import History from '../category/categoryElements/history/History';
 import Fashion from '../category/categoryElements/fashion/Fashion';
 import Science from '../category/categoryElements/science/Science';
 import Library from '../category/categoryElements/library/Library';
-import NotFound from '../NotFound';
+/* import NotFound from '../NotFound'; */
 
 const Navigation = () => {
     return (

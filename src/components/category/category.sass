@@ -35,5 +35,78 @@
             background-color: #0D274C
             margin-top: 1vw
             border: none
+    &-cardsContainer
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        gap: 1vw
+        width: 100%
+        &-card
+            width: 20vw
+            height: 14vw
+            background-image: url('../../images/test-image/test_image.png')
+            box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9)
+            padding-top: 0.5vw
+            padding-left: 0.5vw
+            padding-right: 0.5vw
+            border-radius: 4px
 
+            transition: .4s
+            &:hover
+                cursor: pointer
+                transform: scale(1.05)
+
+            transition: .4s
+            &-title 
+                position: absolute
+                display: inline
+                padding-left: 0.6vw
+                padding-top: 0.6vw
+                padding-right: 0.2vw
+                padding-bottom: 0.2vw
+                font-family: 'Podkova Bold'
+                color: white
+                background-color: rgba(13, 39, 76, 0.4)
+                border-radius: 2px
+                top: 0
+                left: 0
+            &-authorAndDataContainer
+                position: absolute
+                display: grid
+                grid-template-columns: 1fr
+                grid-template-rows: 1fr 1fr
+                right: 0
+                bottom: 0
+                width: 25%
+                margin-right: 0.5vw
+                margin-bottom: 0.5vw
+                background-color: rgba(13, 39, 76, 0.4)
+                padding-left: 0.2vw
+                padding-top: 0.2vw
+                padding-bottom: 0.2vw
+                border-radius: 2px
+                &-author
+                    display: grid
+                    grid-template-columns: 25% 75%
+                    align-items: center
+                    text-decoration: none
+                    color: #FFFFFF
+                    text-align: left
+                    font-size: 0.7vw
+                    white-space: nowrap
+                    font-family: 'PFDinTextCondPro-Thin'
+                    &:hover
+                        text-decoration: outline
+                &-data 
+                    display: grid
+                    grid-template-columns: 25% 75%
+                    align-items: center
+                    text-decoration: none
+                    color: #FFFFFF
+                    text-align: left
+                    font-size: 0.7vw
+                    white-space: nowrap
+                    font-family: 'PFDinTextCondPro-Thin'
+                    margin-top: 0.1vw
+                    &-icon 
+                        font-weight: normal
 

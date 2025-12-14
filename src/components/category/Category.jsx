@@ -3,8 +3,6 @@ import { Link } from 'react-router';
 
 import './category.sass';
 
-import testImage from '../../images/test-image/test_image.png';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';

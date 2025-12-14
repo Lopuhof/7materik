@@ -1,5 +1,9 @@
 import React from 'react';
 
+import LogInButton from './logInButton/LogInButton';
+import LogInField from './logInField/LogInField';
+import LogInHint from './logInHint/LogInHint';
+
 import './logInModalWindow.sass';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,32 +29,38 @@ const LogInModalWindow = (props) => {
                     </div>
                     <FontAwesomeIcon icon={ faCircleUser } className='logInModalWindow-content-box-faCircleUser' />
                     <div className='logInModalWindow-content-box-identification'>
-                        <div className='logInModalWindow-content-box-identification-logInHint'>Логин:</div>
-                        <input
-                            className='logInModalWindow-content-box-identification-logInInput' 
-                            type='text' 
-                            name='username' 
-                            placeholder='сюда писать логин' 
+                        <LogInHint 
+                            className='logInModalWindow-content-box-identification-logInHint hint'
+                            hintText='Логин'
                         />
-                        <div className='logInModalWindow-content-box-identification-passwordHint'>Пароль:</div>
-                        <input
-                            className='logInModalWindow-content-box-identification-passwordInput' 
-                            type='password' 
-                            name='password' 
-                            placeholder='сюда писать пароль' 
+                        <LogInField 
+                            className='field logInModalWindow-content-box-identification-logInField'
+                            placeholder='сюда писать логин'
+                            name='username'
+                        />
+                        <LogInHint 
+                            className='logInModalWindow-content-box-identification-logInHint hint'
+                            hintText='Пароль'
+                        />
+                        <LogInField 
+                            className='field logInModalWindow-content-box-identification-passwordField'
+                            placeholder='сюда писать пароль'
+                            name='password'
+                            type='password'
                         />
                     </div>
-                    <button 
-                        className='logInModalWindow-content-box-button'
-                        >Войти
-                    </button>
+                    <LogInButton 
+                        className='logInModalWindow-content-box-button button'
+                        buttonText='Войти'
+                    />
                     <div className='logInModalWindow-content-box-registration'>
                         <div className='logInModalWindow-content-box-registration-hint'>
                             Ещё нет аккаунта? Зарегистрируйтесь!
                         </div>
-                        <button className='logInModalWindow-content-box-registration-button'>
-                            Зарегистрироваться
-                        </button>
+                        <LogInButton 
+                            className='logInModalWindow-content-box-registration-button button'
+                            buttonText='Зарегистрироваться'
+                        />
                     </div>
                 </div>
             </div>          

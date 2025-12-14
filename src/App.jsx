@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
+import CreateArticle from './components/createArticle/CreateArticle';
 import LeftPanel from './components/leftPanel/LeftPanel';
 import LogInModalWindow from './components/logIn/LogInModalWindow';
 import Navigation from './components/navigation/Navigation';
@@ -29,6 +30,7 @@ const App = () => {
                 <Navigation />
             </div>
             { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> }  
+            <CreateArticle />
         </div>
     );
 };

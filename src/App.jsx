@@ -26,11 +26,11 @@ const App = () => {
                 modal={ modal } 
                 setModal={ setModal }
             />
-            <div className='appContainer'>
+            {/* <div className='appContainer'>
                 <Navigation />
-            </div>
+            </div> */}
             { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> } 
-            { modal && <body style={{ overflowY: 'hidden' }} /> }
+            { modal && <body style={{ overflowY: 'hidden', paddingRight: '15px' }} /> }
             <CreateArticle />
         </div>
     );

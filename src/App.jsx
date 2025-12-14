@@ -29,7 +29,8 @@ const App = () => {
             <div className='appContainer'>
                 <Navigation />
             </div>
-            { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> }  
+            { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> } 
+            { modal && <body style={{ overflowY: 'hidden' }} /> }
             <CreateArticle />
         </div>
     );

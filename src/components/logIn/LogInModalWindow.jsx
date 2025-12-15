@@ -37,6 +37,7 @@ const LogInModalWindow = (props) => {
                             className='field logInModalWindow-content-box-identification-logInField'
                             placeholder='сюда писать логин'
                             name='username'
+                            type='text'
                         />
                         <LogInHint 
                             className='logInModalWindow-content-box-identification-logInHint hint'

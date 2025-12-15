@@ -7,6 +7,7 @@ const LogInButton = (props) => {
         <div>
             <button 
                 className={props.className}
+                type={props.type}
                 >{props.buttonText}
             </button>
         </div>

@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
 import ChangeCategory from './changeCategory/ChangeCategory';
+import CreateArticleAnnotation from './createArticleAnnotation/CreateArticleAnnotation';
 import CreateArticleLine from './createArticleLine/CreateArticleLine';
 import CreateArticleTextarea from './createArticleTextarea/CreateArticleTextarea';
 import CreateArticleTitle from './createArticleTitle/CreateArticleTitle';
 import CreateArticleField from './createArticleField/CreateArticleField';
+import LogInButton from '../logIn/logInButton/LogInButton';
 
 import './createArticle.sass';
 
@@ -24,15 +26,17 @@ const CreateArticle = () => {
                         Напишите статью, от которой голова идёт кругом! 
                     </div>
                     <hr className='createArticle-container-text-line' />
-                    <div className='createArticle-container-text-annotation'>
-                        Перед вами - симулятор сидения за печатной машинкой, только можно ещё вставлять картинки, выбирать рубрики, выделять основную мысль и так далее и тому подобное. Если есть о чём порассуждать - заполняйте поля ниже и жмите "Отправить"! Как только наш редактор проверит вашу статью - она появится в общематериковском перечне статей!  
-                    </div>
+                    <CreateArticleAnnotation
+                        className='createArticleAnnotation'
+                        annotationText='Перед вами - симулятор сидения за печатной машинкой, только можно ещё вставлять картинки, выбирать рубрики, выделять основную мысль и так далее и тому подобное. Если есть о чём порассуждать - заполняйте поля ниже и жмите "Отправить"! Как только наш редактор проверит вашу статью - она появится в общематериковском перечне статей!'
+                    />
                     <hr className='createArticle-container-text-line' />
                 </div>
                 <div className='createArticle-container-main'>
                     <div className='createArticle-container-main-changeCategory'>
                         <CreateArticleTitle 
                             className='createArticle-container-main-changeCategory createArticleTitle'
+                            htmlFor='category'
                             text='Выберите категорию, к которой относится Ваша будущая статья:'
                         />
                         <ChangeCategory
@@ -45,33 +49,41 @@ const CreateArticle = () => {
                     <div className='createArticle-container-main-articleTitle'>
                         <CreateArticleTitle 
                             className='createArticleTitle'
+                            htmlFor='articleTitle'
                             text='Напишите название статьи:'
                         />
                         <CreateArticleField
                             className='createArticleFieldTitle'
+                            id='articleTitle'
                             type='text'
                             placeholder='Напишите сюда заманчивый заголовок...'
+                            required
                         />
                     </div>
                     <CreateArticleLine className='line' />
                     <div className='createArticle-container-main-text'>
                         <CreateArticleTitle 
                             className='createArticleTitle'
+                            htmlFor='mainText'
                             text='Сюда вставьте (или напишите) непосредственно текст Вашей статьи:'
                         />
                         <CreateArticleTextarea
                             className='createArticleTextareaMainText'
+                            id='mainText'
                             placeholder='Весь текст статьи сюда:'
+                            required
                         />
                     </div>
                     <CreateArticleLine className='line' />
                     <div className='createArticle-container-main-quotes'>
                         <CreateArticleTitle
                              className='createArticleTitle createArticleQuotesHint'
+                             htmlFor='quote'
                              text='В полях ниже напишите наиболее важные цитаты из Вашей статьи (если нет подходящей цитаты - оставьте поле пустым):'
                         />
                         <CreateArticleField
                             className='createArticleFieldTitle'
+                            id='quote'
                             type='text'
                             placeholder='Сюда напишите первую цитату'
                         />
@@ -181,6 +193,23 @@ const CreateArticle = () => {
                         </div>
                     </div>
                     <CreateArticleLine className='line' />
+                    <CreateArticleAnnotation
+                        className='createArticleAnnotation'
+                        annotationText='Проверьте ещё раз категорию, заголовок, основной текст, цитаты и будущие иллюстрации. Если вдруг передумали насчёт всего - можете нажать "Очистить" - кнопка сбросит все поля. Если же уверены - жмите "Отправить"!'
+                    />
+                    <CreateArticleLine className='line' />
+                    <div className='createArticle-container-main-buttonContainer'>
+                        <LogInButton
+                            className='button createArticleButton'
+                            type='reset'
+                            buttonText='Очистить'
+                        />
+                        <LogInButton
+                            className='button createArticleButton'
+                            type='submit'
+                            buttonText='Отправить'
+                        />
+                    </div>
                 </div>
             </form>
         </div>

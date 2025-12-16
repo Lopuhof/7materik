@@ -7,6 +7,7 @@ const CreateArticleTextarea = (props) => {
         <div>
             <textarea 
                 className={props.className}
+                id={props.id}
                 placeholder={props.placeholder} 
             >
             </textarea> 

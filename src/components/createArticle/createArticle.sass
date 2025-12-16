@@ -1,8 +1,4 @@
 @font-face 
-    font-family: 'Podkova Bold'
-    src: url('../../fonts/Podkova.ttf')
-
-@font-face 
     font-family: 'PFDinTextCondPro-Thin'
     src: url('../../fonts/PF Din Text Cond Pro.ttf')
     
@@ -16,6 +12,7 @@
     width: 90%
     margin-left: auto
     margin-right: auto
+    padding-bottom: 1.5%
     &-container
         padding-top: 1vw
         padding-left: 1vw
@@ -31,13 +28,8 @@
                 height: 0.2vw
                 background-color: #0D274C
                 margin-top: 1vw
+                margin-bottom: 1vw
                 border: none
-            &-annotation 
-                display: block
-                text-align: justify
-                margin-top: 1vw
-                font-family: 'PFDinTextCondPro-Thin'
-                font-size: 1vw
         &-main
             &-images
                 &-container
@@ -65,4 +57,10 @@
                         &:hover
                             cursor: pointer
                             transform: scale(1.1)
+            &-buttonContainer
+                display: flex
+                justify-content: space-between
+                width: 55%
+                .createArticleButton
+                    height: 3vw
 

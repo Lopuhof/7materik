@@ -4,10 +4,11 @@ import './createArticleTitle.sass';
 
 const CreateArticleTitle = (props) => {
     return (
-        <div 
-            className={ props.className }>
+        <label 
+            className={ props.className }
+            htmlFor={props.htmlFor}>
             { props.text }
-        </div>
+        </label>
     );
 };
 

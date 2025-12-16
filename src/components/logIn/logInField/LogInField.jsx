@@ -8,6 +8,7 @@ const LogInField = (props) => {
             <input
                 className={props.className} 
                 name={props.name} 
+                id={props.id}
                 placeholder={props.placeholder} 
                 type={props.type}
             />

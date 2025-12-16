@@ -6,7 +6,8 @@ const CreateArticleField = (props) => {
     return (
         <div>
             <input
-                className={props.className} 
+                className={props.className}
+                id={props.id} 
                 type={props.type} 
                 placeholder={props.placeholder}
             />

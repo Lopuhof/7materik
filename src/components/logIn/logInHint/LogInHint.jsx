@@ -5,9 +5,11 @@ import './logInHint.sass';
 const LogInHint = (props) => {
     return (
         <div>
-            <div className={props.className}>
-                {props.hintText}
-            </div>
+            <label 
+                className={props.className}
+                htmlFor={props.htmlFor}>
+                    {props.hintText}
+            </label>
         </div>
     );
 };

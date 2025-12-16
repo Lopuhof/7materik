@@ -8,30 +8,35 @@ import Navigation from './components/navigation/Navigation';
 
 import './app.sass';
 
+let body = document.getElementsByTagName('body');
+
 const App = () => {
     const [modal, setModal] = useState(false);
 
     const openModalWindow = () => {
         setModal(true);
+        body[0].style.overflowY='hidden';
+        body[0].style.paddingRight='15px';
     };
 
     const closeModalWindow = () => {
         setModal(false);
+        body[0].style.overflowY='scroll';
+        body[0].style.paddingRight='0';
     };
 
     return (
-        <div>
+        <div className='app' id='appId'>
             <LeftPanel 
                 openModalWindow={ openModalWindow }
                 modal={ modal } 
                 setModal={ setModal }
             />
-            {/* <div className='appContainer'>
+            <div className='app-appContainer'>
                 <Navigation />
-            </div> */}
+            </div>
             { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> } 
-            { modal && <body style={{ overflowY: 'hidden', paddingRight: '15px' }} /> }
-            <CreateArticle />
+            {/* <CreateArticle /> */}
         </div>
     );
 };

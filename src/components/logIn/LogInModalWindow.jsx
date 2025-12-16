@@ -15,10 +15,13 @@ const LogInModalWindow = (props) => {
         <div 
             className='logInModalWindow'
             onClick={ props.closeModalWindow }>
-            <div 
-                className='logInModalWindow-content'
-                onClick={ e => e.stopPropagation() }>
-                <div className='logInModalWindow-content-box'>
+            <div className='logInModalWindow-content'>
+                <form 
+                    className='logInModalWindow-content-box'
+                    method='post'
+                    action='#'
+                    onClick={ e => e.stopPropagation() }
+                >
                     <button 
                         className='logInModalWindow-content-box-faTimesCircle'
                         onClick={ props.closeModalWindow }>
@@ -31,20 +34,24 @@ const LogInModalWindow = (props) => {
                     <div className='logInModalWindow-content-box-identification'>
                         <LogInHint 
                             className='logInModalWindow-content-box-identification-logInHint hint'
+                            htmlFor='user'
                             hintText='Логин'
                         />
                         <LogInField 
-                            className='field logInModalWindow-content-box-identification-logInField'
+                            className='field'
+                            id='user'
                             placeholder='сюда писать логин'
                             name='username'
                             type='text'
                         />
                         <LogInHint 
                             className='logInModalWindow-content-box-identification-logInHint hint'
+                            htmlFor='userPassword'
                             hintText='Пароль'
                         />
                         <LogInField 
-                            className='field logInModalWindow-content-box-identification-passwordField'
+                            className='field'
+                            id='userPassword'
                             placeholder='сюда писать пароль'
                             name='password'
                             type='password'
@@ -63,7 +70,7 @@ const LogInModalWindow = (props) => {
                             buttonText='Зарегистрироваться'
                         />
                     </div>
-                </div>
+                </form>
             </div>          
         </div>
     );

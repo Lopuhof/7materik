@@ -10,6 +10,7 @@ import CreateArticleTextarea from './createArticleTextarea/CreateArticleTextarea
 import CreateArticleTitle from './createArticleTitle/CreateArticleTitle';
 import CreateArticleField from './createArticleField/CreateArticleField';
 import LogInButton from '../logIn/logInButton/LogInButton';
+import Title from '../forAll/titles/Title';
 
 import './createArticle.sass';
 
@@ -22,15 +23,16 @@ const CreateArticle = () => {
                 method='post'
             >
                 <div className='createArticle-container-text'>
-                    <div className='createArticle-container-text-title'>
-                        Напишите статью, от которой голова идёт кругом! 
-                    </div>
-                    <hr className='createArticle-container-text-line' />
+                    <Title
+                        className='title'
+                        titleText='Напишите статью, от которой снесет голову (в хорошем смысле)!'
+                        lineClassName='title-line'
+                    />
                     <CreateArticleAnnotation
                         className='createArticleAnnotation'
                         annotationText='Перед вами - симулятор сидения за печатной машинкой, только можно ещё вставлять картинки, выбирать рубрики, выделять основную мысль и так далее и тому подобное. Если есть о чём порассуждать - заполняйте поля ниже и жмите "Отправить"! Как только наш редактор проверит вашу статью - она появится в общематериковском перечне статей!'
                     />
-                    <hr className='createArticle-container-text-line' />
+                    <hr className='title-line' />
                 </div>
                 <div className='createArticle-container-main'>
                     <div className='createArticle-container-main-changeCategory'>

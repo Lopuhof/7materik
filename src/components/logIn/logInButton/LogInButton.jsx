@@ -8,6 +8,7 @@ const LogInButton = (props) => {
             <button 
                 className={props.className}
                 type={props.type}
+                onClick={props.onClick}
                 >{props.buttonText}
             </button>
         </div>

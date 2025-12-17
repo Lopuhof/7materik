@@ -1,8 +1,10 @@
 import React from 'react';
+import { Routes, Route, Link } from 'react-router';
 
 import LogInButton from './logInButton/LogInButton';
 import LogInField from './logInField/LogInField';
 import LogInHint from './logInHint/LogInHint';
+import Registration from '../registration/Registration';
 
 import './logInModalWindow.sass';
 
@@ -65,10 +67,13 @@ const LogInModalWindow = (props) => {
                         <div className='logInModalWindow-content-box-registration-hint'>
                             Ещё нет аккаунта? Зарегистрируйтесь!
                         </div>
-                        <LogInButton 
-                            className='logInModalWindow-content-box-registration-button button'
-                            buttonText='Зарегистрироваться'
-                        />
+                        <Link to='/registration' element={ <Registration /> }>
+                            <LogInButton 
+                                className='logInModalWindow-content-box-registration-button button'
+                                buttonText='Зарегистрироваться'
+                                onClick={ props.closeModalWindow }
+                            />
+                        </Link>
                     </div>
                 </form>
             </div>          

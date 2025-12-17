@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Routes, Route, Link } from 'react-router';
+import { Routes, Route, NavLink } from 'react-router';
 
 import './navigation.sass';
 
@@ -18,21 +18,21 @@ const Navigation = () => {
     return (
         <div className='navigation'>
             <nav className='navigation-container'>
-                <Link to='/' className='navigation-container-item'>Главная</Link>
+                <NavLink to='/' className='navigation-container-item'>Главная</NavLink>
                 |
-                <Link to='/literature' className='navigation-container-item'>Литература</Link>
+                <NavLink to='/literature' className='navigation-container-item'>Литература</NavLink>
                 |
-                <Link to='/art' className='navigation-container-item'>Искусство</Link>
+                <NavLink to='/art' className='navigation-container-item'>Искусство</NavLink>
                 |
-                <Link to='/history' className='navigation-container-item'>История</Link>
+                <NavLink to='/history' className='navigation-container-item'>История</NavLink>
                 |
-                <Link to='/fashion' className='navigation-container-item'>Мода</Link>
+                <NavLink to='/fashion' className='navigation-container-item'>Мода</NavLink>
                 |
-                <Link to='/science' className='navigation-container-item'>Наука</Link>
+                <NavLink to='/science' className='navigation-container-item'>Наука</NavLink>
                 |
-                <Link to='/library' className='navigation-container-item'>Библиотечное дело</Link>
+                <NavLink to='/library' className='navigation-container-item'>Библиотечное дело</NavLink>
                 |
-                <Link to='/category' className='navigation-container-item'>Тестовая категория</Link>
+                <NavLink to='/category' className='navigation-container-item'>Тестовая категория</NavLink>
             </nav>
             <Routes>
                 <Route path='/' element={ <Homepage /> }></Route>

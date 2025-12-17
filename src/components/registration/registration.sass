@@ -1,0 +1,54 @@
+@font-face 
+    font-family: 'PFDinTextCondPro-Thin'
+    src: url('../../fonts/PF Din Text Cond Pro.ttf')
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.registration
+    margin-right: auto
+    margin-left: auto
+    padding-left: 1vw
+    margin-top: 2vw
+    width: 90%
+    &-container
+        &-form
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-basis: content
+            margin-top: 2vw
+            &-text
+                width: 50%
+            &-text > *
+                width: 70vw
+            &-image
+                .registration-image
+                    width: 10vw
+                    height: 10vw
+                &-checkbox
+                    &-input
+                        margin-right: 10px
+                        width: 1vw
+                        height: 1vw
+                        border-radius: 1%
+                        color: white
+                        accent-color: #0197B8
+                    &-label
+                        font-family: 'PFDinTextCondPro-Thin'
+                    &-rules 
+                        font-family: 'PFDinTextCondPro-Thin'
+                        margin-top: 0.3vw
+                        &-link 
+                            text-decoration: none
+                            color: #0197B8
+                        &-link:hover 
+                            text-decoration: underline
+                &-buttonContainer 
+                    display: grid
+                    grid-template-columns: 1fr 1fr
+                    justify-content: end
+                    width: 100%   
+

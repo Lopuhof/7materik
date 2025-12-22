@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { Link } from 'react-router';
 
 import CreateArticleField from '../createArticle/createArticleField/CreateArticleField';
@@ -14,9 +13,6 @@ import { faUpload } from '@fortawesome/free-solid-svg-icons';
 import './registration.sass';
 
 const Registration = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [copyPassword, setCopyPassword] = useState('');
     return (
         <div className='registration'>
             <div className='registration-container'>
@@ -61,8 +57,6 @@ const Registration = () => {
                                     type='email'
                                     placeholder='Сюда писать адрес электронной почты'
                                     required
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
                             <CreateArticleLine 

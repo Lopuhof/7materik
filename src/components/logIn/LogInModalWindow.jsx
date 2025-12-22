@@ -67,7 +67,10 @@ const LogInModalWindow = (props) => {
                         <div className='logInModalWindow-content-box-registration-hint'>
                             Ещё нет аккаунта? Зарегистрируйтесь!
                         </div>
-                        <Link to='/registration' element={ <Registration /> }>
+                        <Link 
+                            className='registrationLink'
+                            to='/registration' 
+                            element={ <Registration /> }>
                             <LogInButton 
                                 className='logInModalWindow-content-box-registration-button button'
                                 buttonText='Зарегистрироваться'

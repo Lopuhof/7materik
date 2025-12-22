@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import { Link } from 'react-router';
 
 import CreateArticleField from '../createArticle/createArticleField/CreateArticleField';
@@ -14,9 +14,12 @@ import { faUpload } from '@fortawesome/free-solid-svg-icons';
 import './registration.sass';
 
 const Registration = () => {
-    const [email, setEmail] = useState('');
+    const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
-    const [copyPassword, setCopyPassword] = useState('');
+
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
+    }
     return (
         <div className='registration'>
             <div className='registration-container'>
@@ -30,6 +33,7 @@ const Registration = () => {
                         className='registration-container-form'
                         action='#'
                         method='post'
+                        onSubmit={ handleSubmit }
                     >
                         <div className='registration-container-form-text'>
                             <div className='registration-container-form-text-nickname'>
@@ -44,6 +48,8 @@ const Registration = () => {
                                     type='text'
                                     placeholder='Сюда писать никнейм'
                                     required
+                                    value={ login }
+                                    onChange={(e) => setLogin(e.target.value)}
                                 />
                             </div>
                             <CreateArticleLine 
@@ -61,8 +67,6 @@ const Registration = () => {
                                     type='email'
                                     placeholder='Сюда писать адрес электронной почты'
                                     required
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
                             <CreateArticleLine 
@@ -80,6 +84,8 @@ const Registration = () => {
                                     type='password'
                                     placeholder='Сюда писать пароль'
                                     required
+                                    value={ password }
+                                    onChange={(e) => setPassword(e.target.value)}
                                 />
                                 <CreateArticleField 
                                     className='createArticleFieldTitle'

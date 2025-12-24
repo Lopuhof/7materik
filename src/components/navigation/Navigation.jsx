@@ -4,15 +4,15 @@ import { Routes, Route, NavLink } from 'react-router';
 
 import './navigation.sass';
 
-import Category from '../category/Category';
-import Homepage from '../homepage/Homepage';
-import Literature from '../category/categoryElements/literature/Literature';
 import Art from '../category/categoryElements/art/Art';
-import History from '../category/categoryElements/history/History';
+import Category from '../category/Category';
 import Fashion from '../category/categoryElements/fashion/Fashion';
-import Science from '../category/categoryElements/science/Science';
+import History from '../category/categoryElements/history/History';
+import Homepage from '../homepage/Homepage';
 import Library from '../category/categoryElements/library/Library';
-/* import NotFound from '../NotFound'; */
+import Literature from '../category/categoryElements/literature/Literature';
+import NotFound from '../../components/notFound/NotFound';
+import Science from '../category/categoryElements/science/Science';
 
 const Navigation = () => {
     return (
@@ -43,7 +43,7 @@ const Navigation = () => {
                 <Route path='/science' element={ <Science /> }></Route>
                 <Route path='/library' element={ <Library/> }></Route>
                 <Route path='/category' element={ <Category /> }></Route>
-                {/* /* <Route path='*' element={ <NotFound/> }></Route> */ }
+                <Route path='*' element={ <NotFound/> }></Route>
             </Routes>
         </div>        
     );

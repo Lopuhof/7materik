@@ -1,0 +1,36 @@
+@font-face 
+    font-family: 'Podkova Bold'
+    src: url('../../fonts/Podkova.ttf')
+
+@font-face 
+    font-family: 'PFDinTextCondPro-Thin'
+    src: url('../../fonts/PF Din Text Cond Pro.ttf')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.notFound 
+    display: grid
+    align-items: center
+    justify-content: center
+    height: 100vh
+    width: 95%
+    &-container 
+        &-title
+            display: grid
+            grid-template-columns: 0fr 1fr
+            font-size: 10vw
+            &-xmark 
+                display: block
+                color: #0D274C
+            &-text 
+                text-align: center
+                font-family: 'Podkova Bold'
+                color: #D1232A
+        &-subtitle 
+            text-align: center
+            font-size: 2vw
+            font-family: 'PFDinTextCondPro-Thin'
+       

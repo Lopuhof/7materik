@@ -16,9 +16,9 @@ const NotFound = () => {
                             className='notFound-container-title-xmark-icon' 
                         />
                     </div>
-                        <div className="notFound-container-title-text">
-                            404
-                        </div>
+                    <div className="notFound-container-title-text">
+                        404
+                    </div>
                 </div>
                 <div className="notFound-container-subtitle">
                     Простите, такой страницы не существует...

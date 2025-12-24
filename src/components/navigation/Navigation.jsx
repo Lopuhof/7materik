@@ -13,6 +13,7 @@ import Library from '../category/categoryElements/library/Library';
 import Literature from '../category/categoryElements/literature/Literature';
 import NotFound from '../../components/notFound/NotFound';
 import Science from '../category/categoryElements/science/Science';
+import UserPage from '../userPage/UserPage';
 
 const Navigation = () => {
     return (
@@ -33,6 +34,8 @@ const Navigation = () => {
                 <NavLink to='/library' className='navigation-container-item'>Библиотечное дело</NavLink>
                 |
                 <NavLink to='/category' className='navigation-container-item'>Тестовая категория</NavLink>
+                |
+                <NavLink to='/userPage' className='navigation-container-item'>UserPage</NavLink>
             </nav>
             <Routes>
                 <Route path='/' element={ <Homepage /> }></Route>
@@ -44,6 +47,7 @@ const Navigation = () => {
                 <Route path='/library' element={ <Library/> }></Route>
                 <Route path='/category' element={ <Category /> }></Route>
                 <Route path='*' element={ <NotFound/> }></Route>
+                <Route path='/userPage' element={ <UserPage/> }></Route>
             </Routes>
         </div>        
     );

@@ -12,8 +12,10 @@ import Homepage from '../homepage/Homepage';
 import Library from '../category/categoryElements/library/Library';
 import Literature from '../category/categoryElements/literature/Literature';
 import NotFound from '../../components/notFound/NotFound';
+import Registration from '../registration/Registration';
 import Science from '../category/categoryElements/science/Science';
 import UserPage from '../userPage/UserPage';
+import Users from '../../data/usersData/Users';
 
 const Navigation = () => {
     return (
@@ -36,6 +38,8 @@ const Navigation = () => {
                 <NavLink to='/category' className='navigation-container-item'>Тестовая категория</NavLink>
                 |
                 <NavLink to='/userPage' className='navigation-container-item'>UserPage</NavLink>
+                |
+                <NavLink to='/test' className='navigation-container-item'>Test</NavLink>
             </nav>
             <Routes>
                 <Route path='/' element={ <Homepage /> }></Route>
@@ -46,8 +50,10 @@ const Navigation = () => {
                 <Route path='/science' element={ <Science /> }></Route>
                 <Route path='/library' element={ <Library/> }></Route>
                 <Route path='/category' element={ <Category /> }></Route>
-                <Route path='*' element={ <NotFound/> }></Route>
-                <Route path='/userPage' element={ <UserPage/> }></Route>
+                <Route path='/userPage' element={ <UserPage /> }></Route>
+                <Route path='/test' element={ <Users /> }></Route>
+                <Route path='/registration' element={ <Registration /> }></Route>
+                <Route path='*' element={ <NotFound /> }></Route>
             </Routes>
         </div>        
     );

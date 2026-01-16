@@ -8,19 +8,19 @@ import './notFound.sass';
 const NotFound = () => {
     return (
         <div className='notFound'>
-            <div className="notFound-container">
-                <div className="notFound-container-title">
-                    <div className="notFound-container-title-xmark">
+            <div className='notFound-container'>
+                <div className='notFound-container-title'>
+                    <div className='notFound-container-title-xmark'>
                         <FontAwesomeIcon 
                             icon={ faXmark }
                             className='notFound-container-title-xmark-icon' 
                         />
                     </div>
-                    <div className="notFound-container-title-text">
+                    <div className='notFound-container-title-text'>
                         404
                     </div>
                 </div>
-                <div className="notFound-container-subtitle">
+                <div className='notFound-container-subtitle'>
                     Простите, такой страницы не существует...
                 </div>
             </div>

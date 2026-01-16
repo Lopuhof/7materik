@@ -7,6 +7,7 @@ import CreateArticleLine from '../createArticle/createArticleLine/CreateArticleL
 import CreateArticleTitle from '../createArticle/createArticleTitle/CreateArticleTitle';
 import LogInButton from '../logIn/logInButton/LogInButton';
 import Title from '../forAll/titles/Title';
+import Users from '../../data/usersData/Users';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';

@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { Routes, Route } from 'react-router';
 
-import CreateArticle from './components/createArticle/CreateArticle';
 import LeftPanel from './components/leftPanel/LeftPanel';
 import LogInModalWindow from './components/logIn/LogInModalWindow';
 import Navigation from './components/navigation/Navigation';
@@ -39,9 +38,6 @@ const App = () => {
             </div>
             { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> } 
             {/* <CreateArticle /> */}
-            <Routes>
-                <Route path='/registration' element={ <Registration /> }></Route>
-            </Routes>
         </div>
     );
 };

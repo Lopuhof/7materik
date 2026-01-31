@@ -1,0 +1,35 @@
+@font-face 
+    font-family: 'Podkova Bold'
+    src: url('../../fonts/Podkova.ttf')
+    
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.userPage 
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 90%
+    &-container 
+        display: grid 
+        grid-template-columns: 1fr 1fr
+        padding-top: 2vw
+        &-main 
+            display: grid
+            grid-template-columns: 1fr 2fr
+            &-fotoAndNickname
+                display: flex 
+                justify-content: space-around
+                &-foto
+                    &-avatar
+                        width: 19vw
+                        height: 19vw
+                        border-radius: 6%
+                &-nickname 
+                    font-family: 'Podkova Bold'
+                    font-size: 2vw
+                    margin-left: 2vw
+                    width: 50%
+

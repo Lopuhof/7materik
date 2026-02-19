@@ -1,29 +1,33 @@
-import React from 'react';
+import React, { type FC } from 'react';
 import { useState } from 'react';
 import { Routes, Route } from 'react-router';
 
-import LeftPanel from './components/leftPanel/LeftPanel';
-import LogInModalWindow from './components/logIn/LogInModalWindow';
-import Navigation from './components/navigation/Navigation';
-import Registration from './components/registration/Registration';
+import LeftPanel from './components/leftPanel/LeftPanel.jsx';
+import LogInModalWindow from './components/logIn/LogInModalWindow.js';
+import Navigation from './components/navigation/Navigation.js';
+import Registration from './components/registration/Registration.js';
 
 import './app.sass';
 
-let body = document.getElementsByTagName('body');
+let body:HTMLCollectionOf<HTMLBodyElement> = document.getElementsByTagName('body');
 
-const App = () => {
-    const [modal, setModal] = useState(false);
+const App: FC = () => {
+    let [modal, setModal] = useState<boolean>(false);
 
-    const openModalWindow = () => {
+    const openModalWindow = (): void => {
         setModal(true);
-        body[0].style.overflowY='hidden';
-        body[0].style.paddingRight='15px';
+        if (body[0] !== undefined) {
+            body[0].style.overflowY='hidden';
+            body[0].style.paddingRight='15px';
+        };
     };
 
-    const closeModalWindow = () => {
+    const closeModalWindow = (): void => {
         setModal(false);
-        body[0].style.overflowY='scroll';
-        body[0].style.paddingRight='0';
+        if (body[0] !== undefined) {
+            body[0].style.overflowY='scroll';
+            body[0].style.paddingRight='0';
+        };
     };
 
     return (

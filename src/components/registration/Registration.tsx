@@ -2,12 +2,11 @@ import React from 'react';
 
 import { Link } from 'react-router';
 
-import CreateArticleField from '../createArticle/createArticleField/CreateArticleField';
-import CreateArticleLine from '../createArticle/createArticleLine/CreateArticleLine';
-import CreateArticleTitle from '../createArticle/createArticleTitle/CreateArticleTitle';
-import LogInButton from '../logIn/logInButton/LogInButton';
-import Title from '../forAll/titles/Title';
-import Users from '../../data/usersData/Users';
+import CreateArticleField from '../createArticle/createArticleField/CreateArticleField.js';
+import CreateArticleLine from '../createArticle/createArticleLine/CreateArticleLine.js';
+import CreateArticleTitle from '../createArticle/createArticleTitle/CreateArticleTitle.js';
+import LogInButton from '../logIn/logInButton/LogInButton.js';
+import Title from '../forAll/titles/Title.js';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
@@ -106,7 +105,6 @@ const Registration = () => {
                                 type='file' 
                                 id='for-imageAvatar'
                                 className='createArticle-container-main-images-container-input'
-                                action='#'
                                 method='post'
                                 accept='image/*'
                             />

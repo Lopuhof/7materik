@@ -2,7 +2,11 @@ import React from 'react';
 
 import './createArticleLine.sass';
 
-const CreateArticleLine = (props) => {
+type CreateArticleLineProps = {
+    className: string,
+}
+
+const CreateArticleLine = (props: CreateArticleLineProps) => {
     return (
         <div>
             <hr className={props.className} />

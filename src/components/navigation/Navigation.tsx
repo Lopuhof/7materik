@@ -50,7 +50,6 @@ const Navigation = () => {
                 <Route path='/library' element={ <Library/> }></Route>
                 <Route path='/category' element={ <Category /> }></Route>
                 <Route path='/userPage' element={ <UserPage /> }></Route>
-                <Route path='/test' element={ <Users /> }></Route>
                 <Route path='/registration' element={ <Registration /> }></Route>
                 <Route path='*' element={ <NotFound /> }></Route>
             </Routes>

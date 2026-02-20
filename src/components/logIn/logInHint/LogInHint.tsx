@@ -2,7 +2,13 @@ import React from 'react';
 
 import './logInHint.sass';
 
-const LogInHint = (props) => {
+type LogInHintProps = {
+    className: string,
+    htmlFor: string,
+    hintText: string,
+}
+
+const LogInHint = (props: LogInHintProps) => {
     return (
         <div>
             <label 

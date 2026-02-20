@@ -3,14 +3,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
-import ChangeCategory from './changeCategory/ChangeCategory';
-import CreateArticleAnnotation from './createArticleAnnotation/CreateArticleAnnotation';
-import CreateArticleLine from './createArticleLine/CreateArticleLine';
-import CreateArticleTextarea from './createArticleTextarea/CreateArticleTextarea';
-import CreateArticleTitle from './createArticleTitle/CreateArticleTitle';
-import CreateArticleField from './createArticleField/CreateArticleField';
-import LogInButton from '../logIn/logInButton/LogInButton';
-import Title from '../forAll/titles/Title';
+import ChangeCategory from './changeCategory/ChangeCategory.js';
+import CreateArticleAnnotation from './createArticleAnnotation/CreateArticleAnnotation.js';
+import CreateArticleLine from './createArticleLine/CreateArticleLine.js';
+import CreateArticleTextarea from './createArticleTextarea/CreateArticleTextarea.js';
+import CreateArticleTitle from './createArticleTitle/CreateArticleTitle.js';
+import CreateArticleField from './createArticleField/CreateArticleField.js';
+import LogInButton from '../logIn/logInButton/LogInButton.js';
+import Title from '../forAll/titles/Title.js';
 
 import './createArticle.sass';
 
@@ -117,16 +117,14 @@ const CreateArticle = () => {
                              text='Выберите изображения, которые хотите видеть в своей статье в качестве иллюстраций:'
                         />
                         <div className='createArticle-container-main-images-container'>
-                            <input 
+                            <input
                                 type='file' 
-                                id='for-image'
-                                className='createArticle-container-main-images-container-input'
-                                action='#'
-                                method='post'
+                                id='1'
+                                className='createArticle-container-main-images-container-input'                                method='post'
                                 accept='image/*'
                             />
                             <label 
-                                htmlFor='for-image'
+                                htmlFor='1'
                                 className='createArticle-container-main-images-container-field'
                             >
                                 <FontAwesomeIcon 
@@ -134,14 +132,12 @@ const CreateArticle = () => {
                             </label>
                             <input 
                                 type='file' 
-                                id='for-image'
-                                className='createArticle-container-main-images-container-input'
-                                action='#'
-                                method='post'
+                                id='2'
+                                className='createArticle-container-main-images-container-input'                                method='post'
                                 accept='image/*'
                             />
                             <label 
-                                htmlFor='for-image'
+                                htmlFor='2'
                                 className='createArticle-container-main-images-container-field'
                             >
                                 <FontAwesomeIcon 
@@ -149,14 +145,12 @@ const CreateArticle = () => {
                             </label>
                             <input 
                                 type='file' 
-                                id='for-image'
-                                className='createArticle-container-main-images-container-input'
-                                action='#'
-                                method='post'
+                                id='3'
+                                className='createArticle-container-main-images-container-input'                                method='post'
                                 accept='image/*'
                             />
                             <label 
-                                htmlFor='for-image'
+                                htmlFor='3'
                                 className='createArticle-container-main-images-container-field'
                             >
                                 <FontAwesomeIcon 
@@ -164,14 +158,12 @@ const CreateArticle = () => {
                             </label>
                             <input 
                                 type='file' 
-                                id='for-image'
-                                className='createArticle-container-main-images-container-input'
-                                action='#'
-                                method='post'
+                                id='4'
+                                className='createArticle-container-main-images-container-input'                                method='post'
                                 accept='image/*'
                             />
                             <label 
-                                htmlFor='for-image'
+                                htmlFor='4'
                                 className='createArticle-container-main-images-container-field'
                             >
                                 <FontAwesomeIcon 
@@ -179,14 +171,12 @@ const CreateArticle = () => {
                             </label>
                             <input 
                                 type='file' 
-                                id='for-image'
-                                className='createArticle-container-main-images-container-input'
-                                action='#'
-                                method='post'
+                                id='5'
+                                className='createArticle-container-main-images-container-input'                                method='post'
                                 accept='image/*'
                             />
                             <label 
-                                htmlFor='for-image'
+                                htmlFor='5'
                                 className='createArticle-container-main-images-container-field'
                             >
                                 <FontAwesomeIcon 

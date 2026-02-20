@@ -105,6 +105,7 @@ const Registration = () => {
                                 type='file' 
                                 id='for-imageAvatar'
                                 className='createArticle-container-main-images-container-input'
+                                action='#'
                                 method='post'
                                 accept='image/*'
                             />

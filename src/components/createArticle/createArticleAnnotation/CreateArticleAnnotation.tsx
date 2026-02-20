@@ -2,7 +2,12 @@ import React from 'react';
 
 import './createArticleAnnotation.sass';
 
-const CreateArticleAnnotation = (props) => {
+type CreateArticleAnnotationProps = {
+    className: string,
+    annotationText: string,
+}
+
+const CreateArticleAnnotation = (props: CreateArticleAnnotationProps) => {
     return (
         <div>
             <div className={props.className}>

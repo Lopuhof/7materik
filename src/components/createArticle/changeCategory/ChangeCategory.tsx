@@ -2,7 +2,13 @@ import React from 'react';
 
 import './changeCategory.sass';
 
-const ChangeCategory = (props) => {
+type ChangeCategoryProps = {
+    name: string,
+    id: string,
+    className: string,
+}
+
+const ChangeCategory = (props: ChangeCategoryProps) => {
     return (
         <div>
             <select 

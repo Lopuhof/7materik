@@ -2,7 +2,15 @@ import React from 'react';
 
 import './createArticleField.sass';
 
-const CreateArticleField = (props) => {
+type CreateArticleFieldProps = {
+    className: string,
+    id?: string,
+    type: string,
+    placeholder: string,
+    required?: boolean,
+}
+
+const CreateArticleField = (props: CreateArticleFieldProps) => {
     return (
         <div>
             <input

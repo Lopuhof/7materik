@@ -2,7 +2,15 @@ import React from 'react';
 
 import './logInField.sass';
 
-const LogInField = (props) => {
+type LogInFieldProps = {
+    className: string,
+    name?: string,
+    id: string,
+    placeholder?: string,
+    type: string,
+}
+
+const LogInField = (props: LogInFieldProps) => {
     return (
         <div>
             <input

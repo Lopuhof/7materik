@@ -1,6 +1,6 @@
 import React from 'react';
 
-import avatar from '../../images/test-image/test-avatar.jpg';
+import { avatar } from '../../images/test-image/test-avatar.jpg';
 
 import './userPage.sass';
 

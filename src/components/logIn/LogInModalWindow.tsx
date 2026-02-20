@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 
 import LogInButton from './logInButton/LogInButton.js';
-import LogInField from './logInField/LogInField.jsx';
-import LogInHint from './logInHint/LogInHint.jsx';
+import LogInField from './logInField/LogInField.js';
+import LogInHint from './logInHint/LogInHint.js';
 import Registration from '../registration/Registration.js';
 
 import './logInModalWindow.sass';

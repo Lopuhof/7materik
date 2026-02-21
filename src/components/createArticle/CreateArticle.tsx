@@ -120,7 +120,7 @@ const CreateArticle = () => {
                             <input
                                 type='file' 
                                 id='1'
-                                className='createArticle-container-main-images-container-input'                                method='post'
+                                className='createArticle-container-main-images-container-input'
                                 accept='image/*'
                             />
                             <label 
@@ -133,7 +133,7 @@ const CreateArticle = () => {
                             <input 
                                 type='file' 
                                 id='2'
-                                className='createArticle-container-main-images-container-input'                                method='post'
+                                className='createArticle-container-main-images-container-input'
                                 accept='image/*'
                             />
                             <label 
@@ -146,7 +146,7 @@ const CreateArticle = () => {
                             <input 
                                 type='file' 
                                 id='3'
-                                className='createArticle-container-main-images-container-input'                                method='post'
+                                className='createArticle-container-main-images-container-input'
                                 accept='image/*'
                             />
                             <label 
@@ -159,7 +159,7 @@ const CreateArticle = () => {
                             <input 
                                 type='file' 
                                 id='4'
-                                className='createArticle-container-main-images-container-input'                                method='post'
+                                className='createArticle-container-main-images-container-input'
                                 accept='image/*'
                             />
                             <label 
@@ -172,7 +172,7 @@ const CreateArticle = () => {
                             <input 
                                 type='file' 
                                 id='5'
-                                className='createArticle-container-main-images-container-input'                                method='post'
+                                className='createArticle-container-main-images-container-input'
                                 accept='image/*'
                             />
                             <label 

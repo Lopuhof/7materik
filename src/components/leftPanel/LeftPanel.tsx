@@ -5,14 +5,20 @@ import './leftPanel.sass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
-function LeftPanel(props) {
+type LeftPanelProps = {
+    className: string,
+    onClick: () => void,
+    openModalWindow: string,
+}
+
+function LeftPanel(props: LeftPanelProps) {
     return (
         <div className='leftPanel'>
             <div className="leftPanel-leftPanelContent">
                 <FontAwesomeIcon icon={ faCircleUser } className='leftPanel-leftPanelContent-faCircleUser' />
                 <button 
                     className="leftPanel-leftPanelContent-logIn"
-                    onClick={ props.openModalWindow }
+                    onClick={ props.onClick }
                 >Войти
                 </button>
             </div>

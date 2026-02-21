@@ -2,7 +2,13 @@ import React from 'react';
 
 import './title.sass';
 
-const Title = (props) => {
+type TitleProps = {
+    className: string,
+    titleText: string,
+    lineClassName: string,
+}
+
+const Title = (props: TitleProps) => {
     return (
         <div>
             <div className={props.className}>

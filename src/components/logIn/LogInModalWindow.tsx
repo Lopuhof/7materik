@@ -12,11 +12,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
-const LogInModalWindow = (props) => {
+type LogInModalWindowProps = {
+    className: string,
+    onClick: () => void,
+}
+
+const LogInModalWindow = (props: LogInModalWindowProps) => {
     return (
         <div 
             className='logInModalWindow'
-            onClick={ props.closeModalWindow }>
+            onClick={ props.onClick }>
             <div className='logInModalWindow-content'>
                 <form 
                     className='logInModalWindow-content-box'
@@ -26,7 +31,7 @@ const LogInModalWindow = (props) => {
                 >
                     <button 
                         className='logInModalWindow-content-box-faTimesCircle'
-                        onClick={ props.closeModalWindow }>
+                        onClick={ props.onClick }>
                             <FontAwesomeIcon icon={ faTimesCircle } className='logInModalWindow-content-box-faTimesCircle-icon' />
                     </button>
                     <div className="logInModalWindow-content-box-hellow">
@@ -62,6 +67,7 @@ const LogInModalWindow = (props) => {
                     <LogInButton 
                         className='logInModalWindow-content-box-button button'
                         buttonText='Войти'
+                        type='submit'
                     />
                     <div className='logInModalWindow-content-box-registration'>
                         <div className='logInModalWindow-content-box-registration-hint'>
@@ -75,6 +81,7 @@ const LogInModalWindow = (props) => {
                                 className='logInModalWindow-content-box-registration-button button'
                                 buttonText='Зарегистрироваться'
                                 onClick={ props.closeModalWindow }
+                                type='submit'
                             />
                         </Link>
                     </div>

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { type MouseEventHandler } from 'react';
 
 import './logInButton.sass';
 
-const LogInButton = (props) => {
+type LogInButtonProps = {
+    className: string,
+    type: "submit" | "reset" | "button",
+    onClick?: MouseEventHandler<HTMLButtonElement>, 
+    buttonText: string,
+}
+
+const LogInButton = (props: LogInButtonProps) => {
     return (
         <div>
             <button 

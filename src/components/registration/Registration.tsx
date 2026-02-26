@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type FC } from 'react';
 
 import { Link } from 'react-router';
 
@@ -13,7 +13,7 @@ import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
 import './registration.sass';
 
-const Registration = () => {
+const Registration: FC = () => {
     return (
         <div className='registration'>
             <div className='registration-container'>

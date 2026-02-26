@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { type ReactNode, type FC, type JSX } from 'react';
+import { Link, Routes, Route } from 'react-router';
 
 import LogInButton from './logInButton/LogInButton.js';
 import LogInField from './logInField/LogInField.js';
@@ -15,9 +15,10 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 type LogInModalWindowProps = {
     className: string,
     onClick: () => void,
+    closeModalWindow: () => void,
 }
 
-const LogInModalWindow = (props: LogInModalWindowProps) => {
+const LogInModalWindow: FC<LogInModalWindowProps> = (props) => {
     return (
         <div 
             className='logInModalWindow'
@@ -75,8 +76,8 @@ const LogInModalWindow = (props: LogInModalWindowProps) => {
                         </div>
                         <Link 
                             className='registrationLink'
-                            to='/registration' 
-                            element={ <Registration /> }>
+                            to='/registration'
+                        >
                             <LogInButton 
                                 className='logInModalWindow-content-box-registration-button button'
                                 buttonText='Зарегистрироваться'

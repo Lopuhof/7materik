@@ -40,7 +40,7 @@ const App: FC = () => {
             <div className='app-appContainer'>
                 <Navigation />
             </div>
-            { modal && <LogInModalWindow closeModalWindow={ closeModalWindow }/> } 
+            { modal && <LogInModalWindow onClick={closeModalWindow} className={''}/> } 
             {/* <CreateArticle /> */}
         </div>
     );

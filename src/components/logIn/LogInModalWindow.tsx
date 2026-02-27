@@ -1,5 +1,5 @@
-import React, { type ReactNode, type FC, type JSX } from 'react';
-import { Link, Routes, Route } from 'react-router';
+import React, {type ButtonHTMLAttributes, type DetailedHTMLProps, type FC} from 'react';
+import { Link } from 'react-router';
 
 import LogInButton from './logInButton/LogInButton.js';
 import LogInField from './logInField/LogInField.js';
@@ -14,11 +14,11 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 type LogInModalWindowProps = {
     className: string,
-    onClick: () => void,
-    closeModalWindow: () => void,
+    onClick?: React.MouseEventHandler | undefined,
+    closeModalWindow?: () => void,
 }
 
-const LogInModalWindow: FC<LogInModalWindowProps> = (props) => {
+const LogInModalWindow = (props: LogInModalWindowProps) => {
     return (
         <div 
             className='logInModalWindow'
@@ -32,7 +32,8 @@ const LogInModalWindow: FC<LogInModalWindowProps> = (props) => {
                 >
                     <button 
                         className='logInModalWindow-content-box-faTimesCircle'
-                        onClick={ props.onClick }>
+                        onClick={ props.closeModalWindow }
+                    >
                             <FontAwesomeIcon icon={ faTimesCircle } className='logInModalWindow-content-box-faTimesCircle-icon' />
                     </button>
                     <div className="logInModalWindow-content-box-hellow">

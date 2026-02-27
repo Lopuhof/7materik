@@ -31,7 +31,7 @@ var App = function () {
             <div className='app-appContainer'>
                 <Navigation_js_1.default />
             </div>
-            {modal && <LogInModalWindow_js_1.default closeModalWindow={closeModalWindow}/>} 
+            {modal && <LogInModalWindow_js_1.default onClick={closeModalWindow}/>} 
             {/* <CreateArticle /> */}
         </div>);
 };

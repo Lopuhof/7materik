@@ -5,7 +5,7 @@ import './logInButton.sass';
 type LogInButtonProps = {
     className: string,
     type: "submit" | "reset" | "button",
-    onClick?: MouseEventHandler<HTMLButtonElement>, 
+    onClick?: MouseEventHandler<HTMLButtonElement> | undefined, 
     buttonText: string,
 }
 

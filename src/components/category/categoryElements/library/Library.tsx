@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { type FC } from 'react';
 
-const Library = () => {
+const Library: FC = () => {
     return (
         <div>
             

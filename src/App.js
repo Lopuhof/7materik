@@ -1,39 +1,49 @@
-'use strict';
+import React from 'react';
+import { useState } from 'react';
+import { Routes, Route } from 'react-router';
 
-Object.defineProperty(exports, "__esModule", { value: true });
-var react_1 = require("react");
-var react_2 = require("react");
-var LeftPanel_jsx_1 = require("./components/leftPanel/LeftPanel.js");
-var LogInModalWindow_js_1 = require("./components/logIn/LogInModalWindow.js");
-var Navigation_js_1 = require("./components/navigation/Navigation.js");
-require("./app.sass");
-var body = document.getElementsByTagName('body');
-var App = function () {
-    var _a = (0, react_2.useState)(false), modal = _a[0], setModal = _a[1];
-    var openModalWindow = function () {
+import LeftPanel from './components/leftPanel/LeftPanel.jsx';
+import LogInModalWindow from './components/logIn/LogInModalWindow.jsx';
+import Navigation from './components/navigation/Navigation.jsx';
+import Registration from './components/registration/Registration.jsx';
+
+import './app.sass';
+
+let body = document.getElementsByTagName('body');
+
+const App = () => {
+    let [modal, setModal] = useState(false);
+
+    const openModalWindow = () => {
         setModal(true);
         if (body[0] !== undefined) {
-            body[0].style.overflowY = 'hidden';
-            body[0].style.paddingRight = '15px';
-        }
-        ;
+            body[0].style.overflowY='hidden';
+            body[0].style.paddingRight='15px';
+        };
     };
-    var closeModalWindow = function () {
+
+    const closeModalWindow = () => {
         setModal(false);
         if (body[0] !== undefined) {
-            body[0].style.overflowY = 'scroll';
-            body[0].style.paddingRight = '0';
-        }
-        ;
+            body[0].style.overflowY='scroll';
+            body[0].style.paddingRight='0';
+        };
     };
-    return (<div className='app' id='appId'>
-            <LeftPanel_jsx_1.default openModalWindow={openModalWindow} modal={modal} setModal={setModal}/>
+
+    return (
+        <div className='app' id='appId'>
+            <LeftPanel 
+                openModalWindow={ openModalWindow }
+                modal={ modal } 
+                setModal={ setModal }
+            />
             <div className='app-appContainer'>
-                <Navigation_js_1.default />
+                <Navigation />
             </div>
-            {modal && <LogInModalWindow_js_1.default onClick={closeModalWindow}/>} 
+            { modal && <LogInModalWindow onClick={closeModalWindow} className={''}/> } 
             {/* <CreateArticle /> */}
-        </div>);
+        </div>
+    );
 };
 
 export default App;

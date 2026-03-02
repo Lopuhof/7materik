@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type FC } from 'react';
 import { Link } from 'react-router';
 
 import './category.sass';
@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
-const Category = () => {
+const Category: FC = () => {
     return (
         <div className='category'>
             <div className='category-title'>

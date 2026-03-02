@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Fone from '../fone/Fone.js';
-import LogoName from '../logoName/LogoName.js';
+import Fone from '../fone/Fone.jsx';
+import LogoName from '../logoName/LogoName.jsx';
 
 import './homepage.sass';
 

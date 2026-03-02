@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { type FC } from 'react';
 
 import './literature.sass';
 
-const Literature = () => {
+const Literature: FC = () => {
     return (
         <div >
             

@@ -1,0 +1,1 @@
+{"version":3,"file":"CreateArticleAnnotation.d.ts","sourceRoot":"","sources":["../../../../components/createArticle/createArticleAnnotation/CreateArticleAnnotation.tsx"],"names":[],"mappings":"AAEA,OAAO,gCAAgC,CAAC;AAExC,KAAK,4BAA4B,GAAG;IAChC,SAAS,EAAE,MAAM,CAAC;IAClB,cAAc,EAAE,MAAM,CAAC;CAC1B,CAAA;AAED,QAAA,MAAM,uBAAuB,GAAI,OAAO,4BAA4B,4CAQnE,CAAC;AAEF,eAAe,uBAAuB,CAAC"}

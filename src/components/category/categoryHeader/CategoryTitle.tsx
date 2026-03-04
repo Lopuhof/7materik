@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { type FC } from 'react';
 
 import './categoryTitle.sass';
 
-const CategoryTitle = () => {
+const CategoryTitle: FC = () => {
     return (
         <div className='categoryTitle'>
             Актуальное:

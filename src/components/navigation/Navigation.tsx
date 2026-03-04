@@ -4,17 +4,17 @@ import { Routes, Route, NavLink } from 'react-router';
 
 import './navigation.sass';
 
-import Art from '../category/categoryElements/art/Art.jsx';
-import Category from '../category/Category.jsx';
-import Fashion from '../category/categoryElements/fashion/Fashion.jsx';
-import History from '../category/categoryElements/history/History.jsx';
-import Homepage from '../homepage/Homepage.jsx';
-import Library from '../category/categoryElements/library/Library.jsx';
-import Literature from '../category/categoryElements/literature/Literature.jsx';
-import NotFound from '../notFound/NotFound.jsx';
-import Registration from '../registration/Registration.jsx';
-import Science from '../category/categoryElements/science/Science.jsx';
-import UserPage from '../userPage/UserPage.jsx';
+import Art from '../category/categoryElements/art/Art.js';
+import Category from '../category/Category.js';
+import Fashion from '../category/categoryElements/fashion/Fashion.js';
+import History from '../category/categoryElements/history/History.js';
+import Homepage from '../homepage/Homepage.js';
+import Library from '../category/categoryElements/library/Library.js';
+import Literature from '../category/categoryElements/literature/Literature.js';
+import NotFound from '../notFound/NotFound.js';
+import Registration from '../registration/Registration.js';
+import Science from '../category/categoryElements/science/Science.js';
+import UserPage from '../userPage/UserPage.js';
 
 const Navigation = () => {
     return (

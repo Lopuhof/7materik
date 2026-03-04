@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { type FC } from 'react';
 
 import './categoryElements.sass';
 
 import { Link } from 'react-router';
 
-const CategoryElements = () => {
+const CategoryElements: FC = () => {
     return (
         <div className='categoryElementsContainer'>
             <Link to='/literature' className='categoryElementsContainer-item'>Литература</Link>

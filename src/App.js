@@ -2,10 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import { Routes, Route } from 'react-router';
 
-import LeftPanel from './components/leftPanel/LeftPanel.jsx';
-import LogInModalWindow from './components/logIn/LogInModalWindow.jsx';
-import Navigation from './components/navigation/Navigation.jsx';
-import Registration from './components/registration/Registration.jsx';
+import LeftPanel from './dist/components/leftPanel/LeftPanel.js';
+import LogInModalWindow from './dist/components/logIn/LogInModalWindow.js';
+import Navigation from './dist/components/navigation/Navigation.js';
+import Registration from './dist/components/registration/Registration.js';
 
 import './app.sass';
 

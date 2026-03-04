@@ -1,10 +1,10 @@
 import React, {type ButtonHTMLAttributes, type DetailedHTMLProps, type FC} from 'react';
 import { Link } from 'react-router';
 
-import LogInButton from './logInButton/LogInButton.jsx';
-import LogInField from './logInField/LogInField.jsx';
-import LogInHint from './logInHint/LogInHint.jsx';
-import Registration from '../registration/Registration.jsx';
+import LogInButton from './logInButton/LogInButton.js';
+import LogInField from './logInField/LogInField.js';
+import LogInHint from './logInHint/LogInHint.js';
+import Registration from '../registration/Registration.js';
 
 import './logInModalWindow.sass';
 

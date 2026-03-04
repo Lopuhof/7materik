@@ -1,0 +1,16 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import React, {} from 'react';
+import { Link } from 'react-router';
+import LogInButton from './logInButton/LogInButton.js';
+import LogInField from './logInField/LogInField.js';
+import LogInHint from './logInHint/LogInHint.js';
+import Registration from '../registration/Registration.js';
+import '../../../components/logIn/logInModalWindow.sass';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+const LogInModalWindow = (props) => {
+    return (_jsx("div", { className: 'logInModalWindow', onClick: props.onClick, children: _jsx("div", { className: 'logInModalWindow-content', children: _jsxs("form", { className: 'logInModalWindow-content-box', method: 'post', action: '#', onClick: e => e.stopPropagation(), children: [_jsx("button", { className: 'logInModalWindow-content-box-faTimesCircle', onClick: props.closeModalWindow, children: _jsx(FontAwesomeIcon, { icon: faTimesCircle, className: 'logInModalWindow-content-box-faTimesCircle-icon' }) }), _jsx("div", { className: "logInModalWindow-content-box-hellow", children: "\u0414\u043E\u0431\u0440\u043E \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u0442\u044C!" }), _jsx(FontAwesomeIcon, { icon: faCircleUser, className: 'logInModalWindow-content-box-faCircleUser' }), _jsxs("div", { className: 'logInModalWindow-content-box-identification', children: [_jsx(LogInHint, { className: 'logInModalWindow-content-box-identification-logInHint hint', htmlFor: 'user', hintText: '\u041B\u043E\u0433\u0438\u043D' }), _jsx(LogInField, { className: 'field', id: 'user', placeholder: '\u0441\u044E\u0434\u0430 \u043F\u0438\u0441\u0430\u0442\u044C \u043B\u043E\u0433\u0438\u043D', name: 'username', type: 'text' }), _jsx(LogInHint, { className: 'logInModalWindow-content-box-identification-logInHint hint', htmlFor: 'userPassword', hintText: '\u041F\u0430\u0440\u043E\u043B\u044C' }), _jsx(LogInField, { className: 'field', id: 'userPassword', placeholder: '\u0441\u044E\u0434\u0430 \u043F\u0438\u0441\u0430\u0442\u044C \u043F\u0430\u0440\u043E\u043B\u044C', name: 'password', type: 'password' })] }), _jsx(LogInButton, { className: 'logInModalWindow-content-box-button button', buttonText: '\u0412\u043E\u0439\u0442\u0438', type: 'submit' }), _jsxs("div", { className: 'logInModalWindow-content-box-registration', children: [_jsx("div", { className: 'logInModalWindow-content-box-registration-hint', children: "\u0415\u0449\u0451 \u043D\u0435\u0442 \u0430\u043A\u043A\u0430\u0443\u043D\u0442\u0430? \u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0439\u0442\u0435\u0441\u044C!" }), _jsx(Link, { className: 'registrationLink', to: '/registration', children: _jsx(LogInButton, { className: 'logInModalWindow-content-box-registration-button button', buttonText: '\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F', onClick: props.closeModalWindow, type: 'submit' }) })] })] }) }) }));
+};
+export default LogInModalWindow;
+//# sourceMappingURL=LogInModalWindow.js.map

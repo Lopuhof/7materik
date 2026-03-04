@@ -2,11 +2,11 @@ import React, { type FC } from 'react';
 
 import { Link } from 'react-router';
 
-import CreateArticleField from '../createArticle/createArticleField/CreateArticleField.jsx';
-import CreateArticleLine from '../createArticle/createArticleLine/CreateArticleLine.jsx';
-import CreateArticleTitle from '../createArticle/createArticleTitle/CreateArticleTitle.jsx';
-import LogInButton from '../logIn/logInButton/LogInButton.jsx';
-import Title from '../forAll/titles/Title.jsx';
+import CreateArticleField from '../createArticle/createArticleField/CreateArticleField.js';
+import CreateArticleLine from '../createArticle/createArticleLine/CreateArticleLine.js';
+import CreateArticleTitle from '../createArticle/createArticleTitle/CreateArticleTitle.js';
+import LogInButton from '../logIn/logInButton/LogInButton.js';
+import Title from '../forAll/titles/Title.js';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';

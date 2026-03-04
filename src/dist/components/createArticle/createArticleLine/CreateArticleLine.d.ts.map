@@ -1,0 +1,1 @@
+{"version":3,"file":"CreateArticleLine.d.ts","sourceRoot":"","sources":["../../../../components/createArticle/createArticleLine/CreateArticleLine.tsx"],"names":[],"mappings":"AAEA,OAAO,0BAA0B,CAAC;AAElC,KAAK,sBAAsB,GAAG;IAC1B,SAAS,EAAE,MAAM,CAAC;CACrB,CAAA;AAED,QAAA,MAAM,iBAAiB,GAAI,OAAO,sBAAsB,4CAMvD,CAAC;AAEF,eAAe,iBAAiB,CAAC"}

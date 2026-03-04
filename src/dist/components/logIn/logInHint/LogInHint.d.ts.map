@@ -1,0 +1,1 @@
+{"version":3,"file":"LogInHint.d.ts","sourceRoot":"","sources":["../../../../components/logIn/logInHint/LogInHint.tsx"],"names":[],"mappings":"AAEA,OAAO,kBAAkB,CAAC;AAE1B,KAAK,cAAc,GAAG;IAClB,SAAS,EAAE,MAAM,CAAC;IAClB,OAAO,EAAE,MAAM,CAAC;IAChB,QAAQ,EAAE,MAAM,CAAC;CACpB,CAAA;AAED,QAAA,MAAM,SAAS,GAAI,OAAO,cAAc,4CAUvC,CAAC;AAEF,eAAe,SAAS,CAAC"}

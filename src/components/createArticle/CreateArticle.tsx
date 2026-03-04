@@ -3,14 +3,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
-import ChangeCategory from './changeCategory/ChangeCategory.jsx';
-import CreateArticleAnnotation from './createArticleAnnotation/CreateArticleAnnotation.jsx';
-import CreateArticleLine from './createArticleLine/CreateArticleLine.jsx';
-import CreateArticleTextarea from './createArticleTextarea/CreateArticleTextarea.jsx';
-import CreateArticleTitle from './createArticleTitle/CreateArticleTitle.jsx';
-import CreateArticleField from './createArticleField/CreateArticleField.jsx';
-import LogInButton from '../logIn/logInButton/LogInButton.jsx';
-import Title from '../forAll/titles/Title.jsx';
+import ChangeCategory from './changeCategory/ChangeCategory.js';
+import CreateArticleAnnotation from './createArticleAnnotation/CreateArticleAnnotation.js';
+import CreateArticleLine from './createArticleLine/CreateArticleLine.js';
+import CreateArticleTextarea from './createArticleTextarea/CreateArticleTextarea.js';
+import CreateArticleTitle from './createArticleTitle/CreateArticleTitle.js';
+import CreateArticleField from './createArticleField/CreateArticleField.js';
+import LogInButton from '../logIn/logInButton/LogInButton.js';
+import Title from '../forAll/titles/Title.js';
 
 import './createArticle.sass';
 

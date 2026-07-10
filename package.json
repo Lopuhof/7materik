@@ -1,6 +1,7 @@
 {
   "name": "7materik",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
@@ -12,6 +13,8 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "mysql": "github:mysqljs/mysql",
+    "mysql2": "^3.22.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.10.1",
@@ -43,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "nodemon": "^3.1.14",
     "sass": "^1.94.2"
   }
 }

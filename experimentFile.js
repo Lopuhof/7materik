@@ -1,7 +1,5 @@
-import mysql from 'mysql2';
+import mysql from 'mysql';
 import CONFIG from './config.js';
-
-/* const { mysql } = mysqlModule; */
 
 function t01() {
     const connection = mysql.createConnection(CONFIG);

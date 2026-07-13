@@ -1,6 +1,8 @@
-export const CONFIG = {
+const CONFIG = {
     host: 'localhost',
-    user: '',
-    password: '',
+    user: 'root',
+    password: 'root',
     database: '7materik',
 }
+
+export default CONFIG;

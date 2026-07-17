@@ -1,4 +1,4 @@
-import mysql from 'mysql';
+import mysql from 'mysql2';
 import CONFIG from './config.js';
 
 function t01() {
@@ -8,7 +8,8 @@ function t01() {
     let query = 'SELECT * FROM users';
 
     connection.query(query, function(error, result) {
-       console.log(result); 
+        if (error) throw error;
+       console.log(result.length); 
     });
     connection.end();
 }

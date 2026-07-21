@@ -1,5 +1,5 @@
 import mysql from 'mysql2';
-import CONFIG from './config.js';
+import CONFIG from './usersConfig.js';
 
 function t01() {
     const connection = mysql.createConnection(CONFIG);
@@ -8,7 +8,7 @@ function t01() {
     let query = 'SELECT * FROM users';
 
     connection.query(query, function(error, result) {
-        if (error) throw error;
+       if (error) throw error;
        console.log(result.length); 
     });
     connection.end();

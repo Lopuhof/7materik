@@ -19,7 +19,8 @@ module.exports = function(sequelize) {
             type: Sequelize.BLOB('medium')
         },
         registration_data: {
-            type: Sequelize.DATEONLY
+            type: Sequelize.INTEGER(),
+            defaultValue: Math.floor(Date.now() / 1000)
         },
         articles: {
             type: Sequelize.TEXT

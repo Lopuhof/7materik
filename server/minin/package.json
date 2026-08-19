@@ -1,0 +1,19 @@
+{
+  "name": "7materik backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app.cjs",
+    "server": "nodemon ./app.cjs"
+  },
+  "keywords": [],
+  "author": "Evgeniy <xaxaevgesha@mail.ru>",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "mysql2": "^3.23.3",
+    "path": "^0.12.7"
+  }
+}
